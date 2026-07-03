@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radius-tia"
+version = "0.1.0"
+description = "Test Impact Analysis for any language — run only the tests your change can break."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Shreyas Bhardwaj" }]
+keywords = ["testing", "test-impact-analysis", "ci", "coverage", "pytest", "developer-tools"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Testing",
+]
+# The core is pure standard library. Language support is opt-in below.
+dependencies = []
+
+[project.optional-dependencies]
+pytest = ["coverage>=7.0", "pytest-cov>=4.0"]
+dev = ["pytest>=7.0", "coverage>=7.0", "pytest-cov>=4.0"]
+
+[project.scripts]
+radius = "radius.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/itsshreyasbhardwaj-design/radius"
+Issues = "https://github.com/itsshreyasbhardwaj-design/radius/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

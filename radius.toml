@@ -1,0 +1,13 @@
+# radius dogfoods itself. This config maps radius's own test suite.
+[core]
+adapter = "pytest"
+test_paths = ["tests"]
+source_paths = ["src"]
+
+[safety]
+always_run = [
+  "conftest.py", "**/conftest.py",
+  "pyproject.toml", "radius.toml",
+  ".github/workflows/**",
+]
+stale_after_commits = 100

@@ -1,0 +1,17 @@
+# radius coverage map
+.radius/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.json
