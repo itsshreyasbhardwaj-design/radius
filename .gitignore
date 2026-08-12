@@ -15,3 +15,14 @@ venv/
 .coverage.*
 htmlcov/
 coverage.json
+
+# Security hardening: secret-shaped files, none currently present
+.env*
+!.env.example
+*.pem
+*.key
+credentials*.json
+service-account*.json
+*.log
+*.sqlite
+*.db
