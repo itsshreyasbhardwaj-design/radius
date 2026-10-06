@@ -1,0 +1,46 @@
+{
+  "source": "blog",
+  "collected_at_utc": "2026-10-06T17:03:45Z",
+  "method": "Cloned the Jekyll site source from GitHub (git clone --depth 1 --single-branch https://github.com/karpathy/karpathy.github.io) rather than scraping rendered HTML. Two reasons: (1) the rendered blog host karpathy.github.io is blocked by this environment's egress policy (403 CONNECT), so scraping was impossible; (2) even if reachable, the Jekyll repo is the raw truth — it contains the original post source as markdown in _posts/ with YAML front matter intact, plus about.md, index.html, feed.xml, _layouts/, _includes/, css/ and assets/, with no HTML template chrome, no navigation boilerplate and no lossy HTML-to-text conversion. The clone's .git directory was deleted after copying; no file was reformatted, converted or edited.",
+  "targets_collected": [
+    {
+      "target": "https://github.com/karpathy/karpathy.github.io",
+      "local_path": "karpathy.github.io/",
+      "what": "Full Jekyll source of the karpathy.github.io blog: 23 posts in _posts/ as raw markdown, plus about.md, index.html, feed.xml, nntutorial.md (the 'Hacker's Guide to Neural Networks' long-form piece, which lives at the repo root rather than in _posts/), layouts, includes, css and image assets."
+    },
+    {
+      "target": "https://github.com/karpathy/paper-notes",
+      "local_path": "paper-notes/",
+      "what": "Karpathy's long-form paper notes/reviews as raw markdown (matching_networks.md, vin.md, wikireading.md) plus figure images. Resolved via git ls-remote and cloned; .git stripped."
+    }
+  ],
+  "posts_captured": 23,
+  "date_range": {
+    "earliest": "2011-04-27",
+    "latest": "2026-02-12",
+    "derived_from": "_posts/ filename date prefixes under karpathy.github.io/_posts/",
+    "earliest_file": "2011-04-27-manually-classifying-cifar10.markdown",
+    "latest_file": "2026-02-12-microgpt.markdown"
+  },
+  "additional_long_form_captured_outside_posts": [
+    "karpathy.github.io/nntutorial.md",
+    "paper-notes/matching_networks.md",
+    "paper-notes/vin.md",
+    "paper-notes/wikireading.md"
+  ],
+  "completeness_caveat": "THIS IS THE GITHUB-HOSTED BLOG ONLY AND IS NOT A COMPLETE PICTURE OF KARPATHY'S PUBLIC BLOG WRITING. Specifically: (1) all posts on his newer blog karpathy.bearblog.dev are MISSING — that host is blocked by this environment's egress policy (curl: (56) CONNECT tunnel failed, response 403), and no GitHub-hosted mirror of it was found; (2) any Medium posts are MISSING — medium.com/@karpathy is blocked the same way (curl: (56) CONNECT tunnel failed, response 403). Note that karpathy.github.io/_posts/2018-01-20-medium.markdown exists in this corpus as a pointer/stub referring readers to Medium, so the Medium gap is a real, acknowledged hole in the record rather than a hypothetical one. Treat the 2022-2026 period as especially under-covered: the GitHub blog has only two posts dated after 2021 (2022-03-14, 2026-02-12), while the bearblog era is entirely absent. Any downstream analysis must not treat this corpus as the full set of his blog writing.",
+  "blocked_hosts": [
+    "karpathy.github.io (rendered blog; 403 CONNECT — worked around by cloning the source repo)",
+    "karpathy.bearblog.dev (403 CONNECT — content NOT recovered)",
+    "medium.com (403 CONNECT — content NOT recovered)"
+  ],
+  "hosts_that_worked": [
+    "github.com (git clone / git ls-remote over HTTPS)"
+  ],
+  "raw_fidelity_notes": [
+    "Files are byte-identical to what git delivered; nothing was reformatted, converted, renamed or summarized.",
+    "The .git directory was deleted from both clones.",
+    "Each clone is --depth 1 --single-branch, so no revision history is present — only the current tip of the default branch.",
+    "Binary image assets (png/jpeg/gif) were kept as-is and are reported as binary in the manifest."
+  ]
+}

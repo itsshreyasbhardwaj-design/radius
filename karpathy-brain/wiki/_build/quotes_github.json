@@ -1,0 +1,583 @@
+[
+  {
+    "quote": "Both are tiny, with about 100 and 50 lines of code respectively.",
+    "file": "github/micrograd/README.md",
+    "repo": "micrograd",
+    "theme": "build-from-scratch",
+    "note": "Explicit line counts as a design goal."
+  },
+  {
+    "quote": "which trains and samples from a full GPT-2-like transformer in pure, dependency-free Python.",
+    "file": "github/micrograd/README.md",
+    "repo": "micrograd",
+    "theme": "build-from-scratch",
+    "note": "Dependency-free, from-scratch implementation."
+  },
+  {
+    "quote": "and is the complete algorithm in a single file — everything else is just efficiency.",
+    "file": "github/micrograd/README.md",
+    "repo": "micrograd",
+    "theme": "simplicity",
+    "note": "The algorithm is small; the rest is optimization."
+  },
+  {
+    "quote": "To run the unit tests you will have to install [PyTorch](https://pytorch.org/), which the tests use as a reference for verifying the correctness of the calculated gradients.",
+    "file": "github/micrograd/README.md",
+    "repo": "micrograd",
+    "theme": "debugging",
+    "note": "Verifying against a reference implementation."
+  },
+  {
+    "quote": "minGPT tries to be small, clean, interpretable and educational, as most of the currently available GPT model implementations can a bit sprawling.",
+    "file": "github/minGPT/README.md",
+    "repo": "minGPT",
+    "theme": "simplicity",
+    "note": "Small/clean/interpretable as explicit goals."
+  },
+  {
+    "quote": "GPT is not a complicated model and this implementation is appropriately about 300 lines of code",
+    "file": "github/minGPT/README.md",
+    "repo": "minGPT",
+    "theme": "build-from-scratch",
+    "note": "Line-count discipline matched to conceptual size."
+  },
+  {
+    "quote": "I also wanted to change the direction a bit, from a sole focus on education to something that is still simple and hackable but has teeth",
+    "file": "github/minGPT/README.md",
+    "repo": "minGPT",
+    "theme": "research-taste",
+    "note": "Simple and hackable, but reproduces real benchmarks."
+  },
+  {
+    "quote": "E.g. some large functions have as much as 90% unused code behind various branching statements that is unused in the default setting of simple language modeling",
+    "file": "github/minGPT/README.md",
+    "repo": "minGPT",
+    "theme": "abstraction",
+    "note": "Critique of full-featured frameworks being hard to trace."
+  },
+  {
+    "quote": "The code itself is plain and readable: `train.py` is a ~300-line boilerplate training loop and `model.py` a ~300-line GPT model definition",
+    "file": "github/nanoGPT/README.md",
+    "repo": "nanoGPT",
+    "theme": "simplicity",
+    "note": "Plain readable code with explicit line counts."
+  },
+  {
+    "quote": "Because the code is so simple, it is very easy to hack to your needs, train new models from scratch, or finetune pretrained checkpoints",
+    "file": "github/nanoGPT/README.md",
+    "repo": "nanoGPT",
+    "theme": "simplicity",
+    "note": "Simplicity is what makes code hackable."
+  },
+  {
+    "quote": "Have a look at all of its args, the script tries to be very readable, hackable and transparent.",
+    "file": "github/nanoGPT/README.md",
+    "repo": "nanoGPT",
+    "theme": "simplicity",
+    "note": "Readable, hackable, transparent as stated goals."
+  },
+  {
+    "quote": "If you are not a deep learning professional and you just want to feel the magic and get your feet wet, the fastest way to get started is to train a character-level GPT on the works of Shakespeare.",
+    "file": "github/nanoGPT/README.md",
+    "repo": "nanoGPT",
+    "theme": "teaching",
+    "note": "On-ramp designed for beginners."
+  },
+  {
+    "quote": "Minimal, clean code for the (byte-level) Byte Pair Encoding (BPE) algorithm commonly used in LLM tokenization.",
+    "file": "github/minbpe/README.md",
+    "repo": "minbpe",
+    "theme": "simplicity",
+    "note": "Minimal and clean as the headline description."
+  },
+  {
+    "quote": "All of the files above are very short and thoroughly commented, and also contain a usage example on the bottom of the file.",
+    "file": "github/minbpe/README.md",
+    "repo": "minbpe",
+    "theme": "teaching",
+    "note": "Short, commented files with inline examples."
+  },
+  {
+    "quote": "Finally, I'd like to stress that I tried hard to keep the code itself clean, readable and hackable. You should not have feel scared to read the code and understand how it works.",
+    "file": "github/minbpe/README.md",
+    "repo": "minbpe",
+    "theme": "understanding",
+    "note": "Code should invite reading, not intimidate."
+  },
+  {
+    "quote": "Build your own GPT-4 Tokenizer!",
+    "file": "github/minbpe/exercise.md",
+    "repo": "minbpe",
+    "theme": "teaching",
+    "note": "Learning by rebuilding the real thing yourself."
+  },
+  {
+    "quote": "a lot of the shortcomings of LLMs that may be attributed to the neural network or otherwise appear mysterious actually trace back to tokenization.",
+    "file": "github/minbpe/lecture.md",
+    "repo": "minbpe",
+    "theme": "understanding",
+    "note": "Demystifying apparent magic by tracing it to a concrete stage."
+  },
+  {
+    "quote": "Compared to llama.cpp, I wanted something super simple, minimal, and educational so I chose to hard-code the Llama 2 architecture and just roll one inference file of pure C with no dependencies.",
+    "file": "github/llama2.c/README.md",
+    "repo": "llama2.c",
+    "theme": "build-from-scratch",
+    "note": "Hard-code and roll your own rather than generalize."
+  },
+  {
+    "quote": "In particular, this repo is not a complex framework with a 1000 knobs controlling inscrutible code across a nested directory structure of hundreds of files.",
+    "file": "github/llama2.c/README.md",
+    "repo": "llama2.c",
+    "theme": "abstraction",
+    "note": "Explicit rejection of framework sprawl."
+  },
+  {
+    "quote": "This repo still cares about efficiency, but not at the cost of simplicity, readability or portability.",
+    "file": "github/llama2.c/README.md",
+    "repo": "llama2.c",
+    "theme": "simplicity",
+    "note": "Ranking simplicity above raw speed."
+  },
+  {
+    "quote": "It shouldn't be full-featured. It shouldn't take 100 different options or settings. It shouldn't be the most efficient.",
+    "file": "github/llama2.c/README.md",
+    "repo": "llama2.c",
+    "theme": "simplicity",
+    "note": "Deliberately refusing features."
+  },
+  {
+    "quote": "TLDR: I am eager to merge any mostly small, mostly localized, broadly applicable, clean changes that improve the efficiency and portability of the repo, while keep its hackability and readability.",
+    "file": "github/llama2.c/README.md",
+    "repo": "llama2.c",
+    "theme": "simplicity",
+    "note": "Contribution policy written around keeping code small."
+  },
+  {
+    "quote": "This is not meant to be too heavyweight library with a billion switches and knobs. It is one hackable file, and is mostly intended for educational purposes.",
+    "file": "github/makemore/README.md",
+    "repo": "makemore",
+    "theme": "simplicity",
+    "note": "One hackable file, no knobs."
+  },
+  {
+    "quote": "[PyTorch](https://pytorch.org) is the only requirement.",
+    "file": "github/makemore/README.md",
+    "repo": "makemore",
+    "theme": "build-from-scratch",
+    "note": "Minimal dependencies."
+  },
+  {
+    "quote": "A course on neural networks that starts all the way at the basics. The course is a series of YouTube videos where we code and train neural networks together.",
+    "file": "github/nn-zero-to-hero/README.md",
+    "repo": "nn-zero-to-hero",
+    "theme": "teaching",
+    "note": "Teaching from the basics, by coding together."
+  },
+  {
+    "quote": "I recommend you work through the exercise yourself but work with it in tandem and whenever you are stuck unpause the video and see me give away the answer.",
+    "file": "github/nn-zero-to-hero/README.md",
+    "repo": "nn-zero-to-hero",
+    "theme": "teaching",
+    "note": "Active practice over passive watching."
+  },
+  {
+    "quote": "This helps build competence and intuition around how neural nets are optimized and sets you up to more confidently innovate on and debug modern neural networks.",
+    "file": "github/nn-zero-to-hero/README.md",
+    "repo": "nn-zero-to-hero",
+    "theme": "understanding",
+    "note": "Manual backprop builds debugging intuition."
+  },
+  {
+    "quote": "We'll go through a number of these issues, discuss why tokenization is at fault, and why someone out there ideally finds a way to delete this stage entirely.",
+    "file": "github/nn-zero-to-hero/README.md",
+    "repo": "nn-zero-to-hero",
+    "theme": "research-taste",
+    "note": "Opinionated judgment about what should not exist."
+  },
+  {
+    "quote": "We are going to build everything end-to-end from basics to a functioning web app similar to ChatGPT, from scratch in Python, C and CUDA, and with minimal computer science prerequisites.",
+    "file": "github/llm101n/README.md",
+    "repo": "llm101n",
+    "theme": "build-from-scratch",
+    "note": "End-to-end from scratch, minimal prerequisites."
+  },
+  {
+    "quote": "By the end you should have a relatively deep understanding of AI, LLMs, and deep learning more generally.",
+    "file": "github/llm101n/README.md",
+    "repo": "llm101n",
+    "theme": "understanding",
+    "note": "Depth of understanding as the outcome."
+  },
+  {
+    "quote": "The git commits were specifically kept step by step and clean so that one can easily walk through the git commit history to see it built slowly.",
+    "file": "github/build-nanogpt/README.md",
+    "repo": "build-nanogpt",
+    "theme": "teaching",
+    "note": "Incremental steps made legible as commit history."
+  },
+  {
+    "quote": "Minor cleanup, we forgot to delete `register_buffer` of the bias once we switched to flash attention, fixed with a recent PR.",
+    "file": "github/build-nanogpt/README.md",
+    "repo": "build-nanogpt",
+    "theme": "debugging",
+    "note": "Public errata; owning mistakes in the open."
+  },
+  {
+    "quote": "Publishing here as a Github repo so people can easily hack it, walk through the `git log` history of it, etc.",
+    "file": "github/ng-video-lecture/README.md",
+    "repo": "ng-video-lecture",
+    "theme": "teaching",
+    "note": "Published so others can hack and walk the history."
+  },
+  {
+    "quote": "NOTE: sadly I did not go too much into model initialization in the video lecture, but it is quite important for good performance.",
+    "file": "github/ng-video-lecture/README.md",
+    "repo": "ng-video-lecture",
+    "theme": "teaching",
+    "note": "Flagging a gap in his own teaching."
+  },
+  {
+    "quote": "nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages",
+    "file": "github/nanochat/README.md",
+    "repo": "nanochat",
+    "theme": "simplicity",
+    "note": "Minimal/hackable harness covering the whole pipeline."
+  },
+  {
+    "quote": "Accessibility is about overall cost but also about cognitive complexity - nanochat is not an exhaustively configurable LLM \"framework\"; there are no giant configuration objects, model factories, or if-then-else monsters in the code base.",
+    "file": "github/nanochat/README.md",
+    "repo": "nanochat",
+    "theme": "abstraction",
+    "note": "Cognitive complexity is a first-class cost."
+  },
+  {
+    "quote": "It is a single, cohesive, minimal, readable, hackable, maximally-forkable \"strong baseline\" codebase designed to run start to end and produce a ChatGPT model you can talk to.",
+    "file": "github/nanochat/README.md",
+    "repo": "nanochat",
+    "theme": "simplicity",
+    "note": "The full list of adjectives he optimizes code for."
+  },
+  {
+    "quote": "I like to change something in the code, re-run a d12 (or a d16 etc) and see if it helped, in an iteration loop.",
+    "file": "github/nanochat/README.md",
+    "repo": "nanochat",
+    "theme": "empiricism",
+    "note": "Fast change-measure-repeat loop at small scale."
+  },
+  {
+    "quote": "But any candidate changes to the repo have to be principled enough that they work for all settings of depth.",
+    "file": "github/nanochat/README.md",
+    "repo": "nanochat",
+    "theme": "research-taste",
+    "note": "Changes must generalize, not just win one benchmark."
+  },
+  {
+    "quote": "autocast is \"magic we don't control\" — it silently decides which ops run in which precision via internal allowlists.",
+    "file": "github/nanochat/dev/LOG.md",
+    "repo": "nanochat",
+    "theme": "abstraction",
+    "note": "Rejecting implicit framework magic."
+  },
+  {
+    "quote": "By making precision explicit, we gain fine-grained control (e.g. can experiment with fp32 norms) and eliminate an unnecessary layer of abstraction.",
+    "file": "github/nanochat/dev/LOG.md",
+    "repo": "nanochat",
+    "theme": "abstraction",
+    "note": "Explicit control over hidden abstraction layers."
+  },
+  {
+    "quote": "This pass did not find any cheap parameter-golf transfer that clearly improves nanochat on the metric that matters: wall clock time to capability.",
+    "file": "github/nanochat/dev/LOG.md",
+    "repo": "nanochat",
+    "theme": "empiricism",
+    "note": "Negative results recorded against one clear metric."
+  },
+  {
+    "quote": "Helped a tiny bit (~1e-4 of loss), abandoned to control complexity.",
+    "file": "github/nanochat/dev/LOG.md",
+    "repo": "nanochat",
+    "theme": "simplicity",
+    "note": "Rejecting a real but tiny win to keep code small."
+  },
+  {
+    "quote": "Classifying as negative result and reverting back to FineWeb-edu for now.",
+    "file": "github/nanochat/dev/LOG.md",
+    "repo": "nanochat",
+    "theme": "empiricism",
+    "note": "Reverting when the experiment fails."
+  },
+  {
+    "quote": "For example, if it is gnarly or it significantly bloats the code, or it seems too esoteric, then we will weigh those things against the improvement demonstrated.",
+    "file": "github/nanochat/dev/LEADERBOARD.md",
+    "repo": "nanochat",
+    "theme": "simplicity",
+    "note": "Aesthetic cost counted against measured gains."
+  },
+  {
+    "quote": "So your change must be principled enough that it can easily generalize to other model depths, so that we can sweep out a miniseries.",
+    "file": "github/nanochat/dev/LEADERBOARD.md",
+    "repo": "nanochat",
+    "theme": "research-taste",
+    "note": "Principled generality over one-off tuning."
+  },
+  {
+    "quote": "LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython.",
+    "file": "github/llm.c/README.md",
+    "repo": "llm.c",
+    "theme": "build-from-scratch",
+    "note": "Zero-dependency reimplementation."
+  },
+  {
+    "quote": "First, I want `llm.c` to be a place for education.",
+    "file": "github/llm.c/README.md",
+    "repo": "llm.c",
+    "theme": "teaching",
+    "note": "Education stated as the first goal of the repo."
+  },
+  {
+    "quote": "However, as a constraint, I want to keep the mainline `llm.c` in the root folder simple and readable.",
+    "file": "github/llm.c/README.md",
+    "repo": "llm.c",
+    "theme": "simplicity",
+    "note": "Simplicity enforced as a hard constraint."
+  },
+  {
+    "quote": "If there is a PR that e.g. improves performance by 2% but it \"costs\" 500 lines of complex C code, and maybe an exotic 3rd party dependency, I may reject the PR because the complexity is not worth it.",
+    "file": "github/llm.c/README.md",
+    "repo": "llm.c",
+    "theme": "simplicity",
+    "note": "An explicit exchange rate between speed and complexity."
+  },
+  {
+    "quote": "debugging tip: when you run the `make` command to build the binary, modify it by replacing `-O3` with `-g` so you can step through the code in your favorite IDE (e.g. vscode).",
+    "file": "github/llm.c/README.md",
+    "repo": "llm.c",
+    "theme": "debugging",
+    "note": "Concrete practical debugging advice."
+  },
+  {
+    "quote": "You'll see that this first forwards the reference code on the CPU, then it runs kernel 1 on the GPU, compares the results to check for correctness, and then runs a number of configurations of this kernel",
+    "file": "github/llm.c/dev/cuda/README.md",
+    "repo": "llm.c",
+    "theme": "debugging",
+    "note": "CPU reference as correctness oracle for GPU kernels."
+  },
+  {
+    "quote": "That's because it is buried 30 layers deep in the code, behind an inscrutable dynamical dispatcher, in some possibly auto-generated CUDA code",
+    "file": "github/llm.c/doc/layernorm/layernorm.md",
+    "repo": "llm.c",
+    "theme": "abstraction",
+    "note": "Framework internals are a black box you can't read."
+  },
+  {
+    "quote": "This will be a lot less efficient than just forwarding a `LayerNorm` module, but it is algorithmically instructive.",
+    "file": "github/llm.c/doc/layernorm/layernorm.md",
+    "repo": "llm.c",
+    "theme": "understanding",
+    "note": "Trading efficiency for instructional clarity."
+  },
+  {
+    "quote": "But we don't want to use PyTorch Autograd. We want to do the backward pass manually. So we take out pen and paper and write out the expression for LayerNorm.",
+    "file": "github/llm.c/doc/layernorm/layernorm.md",
+    "repo": "llm.c",
+    "theme": "understanding",
+    "note": "Derive it by hand rather than trust autograd."
+  },
+  {
+    "quote": "This is close but not quite the same as what the paper reports.",
+    "file": "github/lecun1989-repro/README.md",
+    "repo": "lecun1989-repro",
+    "theme": "empiricism",
+    "note": "Honest reporting of a partial reproduction."
+  },
+  {
+    "quote": "I expect that the majority of this discrepancy comes from the training dataset itself.",
+    "file": "github/lecun1989-repro/README.md",
+    "repo": "lecun1989-repro",
+    "theme": "empiricism",
+    "note": "Reasoning about the source of discrepancy."
+  },
+  {
+    "quote": "Just me developing a pure Python from-scratch zero-dependency implementation of Bitcoin for educational purposes, including all of the under the hood crypto primitives such as SHA-256 and elliptic curves over finite fields math.",
+    "file": "github/cryptos/README.md",
+    "repo": "cryptos",
+    "theme": "build-from-scratch",
+    "note": "From-scratch, zero-dependency, down to the primitives."
+  },
+  {
+    "quote": "what better way to do this than implement it from scratch?",
+    "file": "github/cryptos/blog.ipynb",
+    "repo": "cryptos",
+    "theme": "understanding",
+    "note": "Implementing from scratch as the route to understanding."
+  },
+  {
+    "quote": "but this is supposed to be a zero-dependency implementation, so `import hashlib` is cheating.",
+    "file": "github/cryptos/blog.ipynb",
+    "repo": "cryptos",
+    "theme": "build-from-scratch",
+    "note": "Taking the no-dependency constraint literally."
+  },
+  {
+    "quote": "I admit that it may look a bit scary and understanding and re-deriving the above took me a good half of a day.",
+    "file": "github/cryptos/blog.ipynb",
+    "repo": "cryptos",
+    "theme": "understanding",
+    "note": "Honest about the effort understanding takes."
+  },
+  {
+    "quote": "A much simpler Transformer with a single type of block wired up to a residual pathway in both parallel and in series is possible but to my knowledge has not yet been convincingly achieved.",
+    "file": "github/randomfun/transformer_unify.ipynb",
+    "repo": "randomfun",
+    "theme": "research-taste",
+    "note": "Seeking a simpler unified architecture."
+  },
+  {
+    "quote": "TLDR in my experience it ~always works better to use an SVM instead of kNN, if you can afford the slight computational hit.",
+    "file": "github/randomfun/knn_vs_svm.ipynb",
+    "repo": "randomfun",
+    "theme": "empiricism",
+    "note": "Advice grounded in his own repeated experience."
+  },
+  {
+    "quote": "but it's a bit wordy, sprawling and in Theano. Hence my own shot at it with only ~150 lines of code and PyTorch <3.",
+    "file": "github/pytorch-made/README.md",
+    "repo": "pytorch-made",
+    "theme": "build-from-scratch",
+    "note": "Rewriting sprawling reference code compactly."
+  },
+  {
+    "quote": "I was not able to reproduce single-forward-pass gains that the paper alludes to when training with multiple masks, might be doing something wrong.",
+    "file": "github/pytorch-made/README.md",
+    "repo": "pytorch-made",
+    "theme": "empiricism",
+    "note": "Reporting a failed reproduction honestly."
+  },
+  {
+    "quote": "When I do not use data-driven init the training exhibits catastrophic index collapse.",
+    "file": "github/deep-vector-quantization/README.md",
+    "repo": "deep-vector-quantization",
+    "theme": "debugging",
+    "note": "Concrete empirical failure mode documented."
+  },
+  {
+    "quote": "Remember that it has to learn everything completely from scratch.",
+    "file": "github/char-rnn/Readme.md",
+    "repo": "char-rnn",
+    "theme": "build-from-scratch",
+    "note": "Framing learning from scratch for the reader."
+  },
+  {
+    "quote": "**Note**: I am not actively maintaining ConvNetJS anymore because I simply don't have time.",
+    "file": "github/convnetjs/Readme.md",
+    "repo": "convnetjs",
+    "theme": "other",
+    "note": "Plain honesty about abandoned maintenance."
+  },
+  {
+    "quote": "The core of the library is a **Graph** structure which maintains the links between matrices and how they are related through transformations.",
+    "file": "github/recurrentjs/Readme.md",
+    "repo": "recurrentjs",
+    "theme": "build-from-scratch",
+    "note": "Autodiff built from a graph of matrices, by hand."
+  },
+  {
+    "quote": "Rules of thumb: You almost always want to try the linear SVM first and see how that works.",
+    "file": "github/svmjs/README.md",
+    "repo": "svmjs",
+    "theme": "empiricism",
+    "note": "Start with the simplest baseline and measure."
+  },
+  {
+    "quote": "The library supports arbitrary weak learners.",
+    "file": "github/forestjs/README.md",
+    "repo": "forestjs",
+    "theme": "simplicity",
+    "note": "Small extensible core rather than many options."
+  },
+  {
+    "quote": "A much lighter-weight arxiv-sanity from-scratch re-write.",
+    "file": "github/arxiv-sanity-lite/README.md",
+    "repo": "arxiv-sanity-lite",
+    "theme": "build-from-scratch",
+    "note": "Rewriting his own project smaller, from scratch."
+  },
+  {
+    "quote": "It is a smaller version of arxiv-sanity that focuses on the core value proposition, is significantly less likely to ever go down, scales better",
+    "file": "github/arxiv-sanity-preserver/README.md",
+    "repo": "arxiv-sanity-preserver",
+    "theme": "simplicity",
+    "note": "Smaller surface area is more robust."
+  },
+  {
+    "quote": "Bleh, that's a lot of dependencies isn't it.",
+    "file": "github/arxiv-sanity-preserver/README.md",
+    "repo": "arxiv-sanity-preserver",
+    "theme": "build-from-scratch",
+    "note": "Visible discomfort with dependency count."
+  },
+  {
+    "quote": "This is an early code release that works great but is slightly hastily released and probably requires some code reading of inline comments (which I tried to be quite good with in general).",
+    "file": "github/neuraltalk2/README.md",
+    "repo": "neuraltalk2",
+    "theme": "teaching",
+    "note": "Inline comments as the primary documentation."
+  },
+  {
+    "quote": "Since I can't assess the quality of the similarity search I welcome any opinions on some of the hyperparameters.",
+    "file": "github/covid-sanity/README.md",
+    "repo": "covid-sanity",
+    "theme": "empiricism",
+    "note": "Admitting he lacks a metric to evaluate with."
+  },
+  {
+    "quote": "These two scripts have some more bells and whistles - don't be afraid to read & modify the code, it's relatively short.",
+    "file": "github/find-birds/README.md",
+    "repo": "find-birds",
+    "theme": "simplicity",
+    "note": "Short code invites modification."
+  },
+  {
+    "quote": "This paper falls into a category of *\"duh of course\"* kind of paper, something very interesting, powerful, but somehow obvious only in retrospect. I like it.",
+    "file": "github/paper-notes/matching_networks.md",
+    "repo": "paper-notes",
+    "theme": "research-taste",
+    "note": "His taste in what makes an idea good."
+  },
+  {
+    "quote": "Code is ephemeral now and libraries are over, ask your LLM to change it in whatever way you like.",
+    "file": "github/llm-council/README.md",
+    "repo": "llm-council",
+    "theme": "software2.0",
+    "note": "His view that LLMs change how code is written and maintained."
+  },
+  {
+    "quote": "I'm not going to support it in any way, it's provided here as is for other people's inspiration and I don't intend to improve it.",
+    "file": "github/llm-council/README.md",
+    "repo": "llm-council",
+    "theme": "other",
+    "note": "Publishing a hack without taking on maintenance."
+  },
+  {
+    "quote": "I like deep neural nets.",
+    "file": "github/karpathy/README.md",
+    "repo": "karpathy",
+    "theme": "other",
+    "note": "His entire profile README."
+  },
+  {
+    "quote": "enter name of the json file in the box and click load. Ok this is a bit janky LOL. Ah well.",
+    "file": "github/gitstats/README.md",
+    "repo": "gitstats",
+    "theme": "other",
+    "note": "Shipping janky-but-working tools without apology."
+  },
+  {
+    "quote": "Everything runs **completely locally**: none of your data is uploaded anywhere",
+    "file": "github/ulogme/README.md",
+    "repo": "ulogme",
+    "theme": "other",
+    "note": "Local-first by design."
+  }
+]

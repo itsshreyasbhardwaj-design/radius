@@ -1,0 +1,112 @@
+{
+  "why_this_exists": "Repo count is a poor proxy for authorship. Two forks and a handful of vendored datasets carry most of the words in this source, so any downstream process that weights by volume would be dominated by code and text Karpathy did not write.",
+  "method": "Fork status was established by reading each repo's own README and LICENSE, because the GitHub API that reports fork status is blocked in this environment. Word counts come from the manifest.",
+  "totals": {
+    "all_words": 4796444,
+    "third_party_fork_words": 3177838,
+    "third_party_fork_pct": 66.3,
+    "vendored_dataset_words": 883549,
+    "vendored_dataset_pct": 18.4,
+    "plausibly_authored_words": 735057,
+    "plausibly_authored_pct": 15.3
+  },
+  "third_party_forks": [
+    {
+      "repo": "transformers",
+      "words": 3105698,
+      "pct_of_source": 64.8,
+      "evidence": "fork of huggingface/transformers (README is 'Copyright 2020 The HuggingFace Team')"
+    },
+    {
+      "repo": "nn",
+      "words": 72140,
+      "pct_of_source": 1.5,
+      "evidence": "fork of torch/nn (README carries the torch/nn Travis badge)"
+    }
+  ],
+  "vendored_or_generated_files": [
+    {
+      "path": "build-nanogpt/input.txt",
+      "words": 202651,
+      "kind": "tinyshakespeare training corpus"
+    },
+    {
+      "path": "char-rnn/data/tinyshakespeare/input.txt",
+      "words": 202651,
+      "kind": "tinyshakespeare training corpus"
+    },
+    {
+      "path": "ng-video-lecture/input.txt",
+      "words": 202651,
+      "kind": "tinyshakespeare training corpus"
+    },
+    {
+      "path": "scholaroctopus/render/data5.json",
+      "words": 189570,
+      "kind": "scraped paper metadata"
+    },
+    {
+      "path": "makemore/names.txt",
+      "words": 32033,
+      "kind": "names dataset"
+    },
+    {
+      "path": "minbpe/tests/taylorswift.txt",
+      "words": 28241,
+      "kind": "tokenizer test fixture"
+    },
+    {
+      "path": "nanochat/uv.lock",
+      "words": 25752,
+      "kind": "generated dependency lockfile"
+    }
+  ],
+  "guidance": "Nothing was deleted — this source is raw by design. Filter on these paths at the point of use rather than trusting the headline word count.",
+  "repo_word_counts": {
+    "transformers": 3105698,
+    "char-rnn": 209856,
+    "build-nanogpt": 208290,
+    "ng-video-lecture": 206099,
+    "scholaroctopus": 197456,
+    "llm.c": 154834,
+    "nanochat": 87591,
+    "ulogme": 85075,
+    "nn": 72140,
+    "randomfun": 42740,
+    "convnetjs": 42174,
+    "makemore": 35960,
+    "minbpe": 35125,
+    "reinforcejs": 33790,
+    "llama2.c": 27163,
+    "cryptos": 26033,
+    "nn-zero-to-hero": 25966,
+    "recurrentjs": 23603,
+    "llm-council": 20987,
+    "neuraltalk": 19492,
+    "arxiv-sanity-preserver": 17350,
+    "neuraltalk2": 17217,
+    "nanoGPT": 13485,
+    "minGPT": 9588,
+    "researchlei": 9034,
+    "arxiv-sanity-lite": 8174,
+    "svmjs": 7594,
+    "forestjs": 6871,
+    "nipspreview": 6178,
+    "pytorch-normalizing-flows": 5052,
+    "paper-notes": 4853,
+    "micrograd": 3953,
+    "deep-vector-quantization": 3678,
+    "Random-Forest-Matlab": 3602,
+    "lecun1989-repro": 3541,
+    "researchpooler": 3016,
+    "gitstats": 3003,
+    "covid-sanity": 2618,
+    "tsnejs": 1998,
+    "EigenLibSVM": 1703,
+    "pytorch-made": 1518,
+    "find-birds": 1374,
+    "tf-agent": 629,
+    "llm101n": 338,
+    "karpathy": 5
+  }
+}

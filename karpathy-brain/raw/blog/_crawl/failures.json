@@ -1,0 +1,52 @@
+[
+  {
+    "target": "https://karpathy.github.io/",
+    "reason": "blocked by environment egress policy",
+    "error": "403 CONNECT (proxy refused to open tunnel) — pre-verified as blocked before this crawl; not retried. Content recovered instead by cloning the Jekyll source repo github.com/karpathy/karpathy.github.io."
+  },
+  {
+    "target": "https://karpathy.bearblog.dev/",
+    "reason": "blocked by environment egress policy",
+    "error": "curl: (56) CONNECT tunnel failed, response 403 (http_code 000)"
+  },
+  {
+    "target": "https://medium.com/@karpathy",
+    "reason": "blocked by environment egress policy",
+    "error": "curl: (56) CONNECT tunnel failed, response 403 (http_code 000)"
+  },
+  {
+    "target": "https://github.com/karpathy/blog",
+    "reason": "repository does not exist / not accessible",
+    "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+  },
+  {
+    "target": "https://github.com/karpathy/notes",
+    "reason": "repository does not exist / not accessible",
+    "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+  },
+  {
+    "target": "https://github.com/karpathy/writing",
+    "reason": "repository does not exist / not accessible",
+    "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+  },
+  {
+    "target": "https://github.com/karpathy/essays",
+    "reason": "repository does not exist / not accessible",
+    "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+  },
+  {
+    "target": "https://github.com/karpathy/random",
+    "reason": "repository does not exist / not accessible",
+    "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+  },
+  {
+    "target": "https://github.com/karpathy/karpathy-blog",
+    "reason": "repository does not exist / not accessible",
+    "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+  },
+  {
+    "target": "https://github.com/karpathy/karpathy.bearblog.dev",
+    "reason": "repository does not exist / not accessible",
+    "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt). No GitHub-hosted mirror of the bearblog.dev posts was found."
+  }
+]

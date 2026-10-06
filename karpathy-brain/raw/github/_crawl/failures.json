@@ -1,0 +1,777 @@
+[
+  {
+    "target": "karpathy/Arxiv-Sanity",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/Deep-Q-Learning",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/Deep-Q-Learning/'"
+  },
+  {
+    "target": "karpathy/MatlabScripts",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/MatlabWrappers",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/MatlabWrappers/'"
+  },
+  {
+    "target": "karpathy/Random-Forest",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/Random-Forest/'"
+  },
+  {
+    "target": "karpathy/agents",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/alexnet",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/arxiv-bot",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/arxiv-sanity",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/arxiv-sanity/'"
+  },
+  {
+    "target": "karpathy/atari",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/atari/'"
+  },
+  {
+    "target": "karpathy/autograd",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/autograd/'"
+  },
+  {
+    "target": "karpathy/awesome",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/awesome/'"
+  },
+  {
+    "target": "karpathy/bigram",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/bigram/'"
+  },
+  {
+    "target": "karpathy/bio",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/blog",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/blog/'"
+  },
+  {
+    "target": "karpathy/caffe",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/caffe/'"
+  },
+  {
+    "target": "karpathy/calorie-ninja",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/cifar10",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/cifar10/'"
+  },
+  {
+    "target": "karpathy/convnet-js",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/cs231n",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/cs231n/'"
+  },
+  {
+    "target": "karpathy/cs231n.github.io",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/cs231n.github.io/'"
+  },
+  {
+    "target": "karpathy/cursor-tutor",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/cursor-tutor/'"
+  },
+  {
+    "target": "karpathy/cvpr",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/deep-learning-papers",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/deep-learning-school",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/deep-learning-school/'"
+  },
+  {
+    "target": "karpathy/deepdream",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/deepdream/'"
+  },
+  {
+    "target": "karpathy/deepspeech",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/deepspeech/'"
+  },
+  {
+    "target": "karpathy/diffusion",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/diffusion/'"
+  },
+  {
+    "target": "karpathy/digit",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/digit/'"
+  },
+  {
+    "target": "karpathy/dinosaur",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/dinosaur/'"
+  },
+  {
+    "target": "karpathy/dotfiles",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/dotfiles/'"
+  },
+  {
+    "target": "karpathy/dqn",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/dqn/'"
+  },
+  {
+    "target": "karpathy/dqn-tensorflow",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/emoji",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/eureka",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/experiments",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/experiments/'"
+  },
+  {
+    "target": "karpathy/forest-js",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/fun",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/fun/'"
+  },
+  {
+    "target": "karpathy/gan",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/gan/'"
+  },
+  {
+    "target": "karpathy/googlenet",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/gpt",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/gpt/'"
+  },
+  {
+    "target": "karpathy/gpt-2",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/gpt-2/'"
+  },
+  {
+    "target": "karpathy/grad-cam",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/grad-cam/'"
+  },
+  {
+    "target": "karpathy/gradcheck",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/gradcheck/'"
+  },
+  {
+    "target": "karpathy/gridworld",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/gym",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/gym/'"
+  },
+  {
+    "target": "karpathy/hbase",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/iccv",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/icml",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/image-captioning",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/image-captioning/'"
+  },
+  {
+    "target": "karpathy/imagenet",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/imagenet/'"
+  },
+  {
+    "target": "karpathy/ipython-notebooks",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/ipython-notebooks/'"
+  },
+  {
+    "target": "karpathy/llama",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/llama/'"
+  },
+  {
+    "target": "karpathy/llama.cpp",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/llamafile",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/llamafile/'"
+  },
+  {
+    "target": "karpathy/llm-viz",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/llm.c-cuda",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/llmc",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/llms",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/lstm",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/lstm/'"
+  },
+  {
+    "target": "karpathy/lstm-char-cnn",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/magicarp",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/magicarp/'"
+  },
+  {
+    "target": "karpathy/makemore-rs",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/mathquiz",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/matlab",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/micrograd-cpp",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/micrograd-rs",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/micrograd-rs/'"
+  },
+  {
+    "target": "karpathy/mingpt-demo",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/mingpt-demo/'"
+  },
+  {
+    "target": "karpathy/mini-llm",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/mini-llm/'"
+  },
+  {
+    "target": "karpathy/minsearch",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/minsearch/'"
+  },
+  {
+    "target": "karpathy/ml-notes",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/mnist",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/mnist/'"
+  },
+  {
+    "target": "karpathy/modded-nanogpt",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/modded-nanogpt/'"
+  },
+  {
+    "target": "karpathy/mywiki",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/mywiki/'"
+  },
+  {
+    "target": "karpathy/nano-llama31",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/nano-llama31/'"
+  },
+  {
+    "target": "karpathy/nanoGPT-lecture",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/nanoGPT-lecture/'"
+  },
+  {
+    "target": "karpathy/nanoGPT-llama",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/nanoGPT-mup",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/nanoGPT2",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/nanoRL",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/nanoRL/'"
+  },
+  {
+    "target": "karpathy/nanoVLM",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/nanoVLM/'"
+  },
+  {
+    "target": "karpathy/nanoagent",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/nanodiffusion",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/nanoeval",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/nanoeval/'"
+  },
+  {
+    "target": "karpathy/nanoflow",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/nanoflow/'"
+  },
+  {
+    "target": "karpathy/nanogpt-mlx",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/nanogpt-speedrun",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/nanogpt-speedrun/'"
+  },
+  {
+    "target": "karpathy/nanogpt.c",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/nanogpt.c/'"
+  },
+  {
+    "target": "karpathy/nanogrpo",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/nanogrpo/'"
+  },
+  {
+    "target": "karpathy/nanot5",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/neural-networks",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/neural-networks/'"
+  },
+  {
+    "target": "karpathy/neural-style",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/neural-style/'"
+  },
+  {
+    "target": "karpathy/neural-vqa",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/neural-vqa/'"
+  },
+  {
+    "target": "karpathy/neuraltalk2.torch",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/neuraltalk3",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/neuraltalk3/'"
+  },
+  {
+    "target": "karpathy/nips",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/notebooks",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/notebooks/'"
+  },
+  {
+    "target": "karpathy/notpron",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/notpron/'"
+  },
+  {
+    "target": "karpathy/numpy-tutorial",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/numpy-tutorial/'"
+  },
+  {
+    "target": "karpathy/openai-gym",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/openai-gym/'"
+  },
+  {
+    "target": "karpathy/pixelcnn",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/pixelcnn/'"
+  },
+  {
+    "target": "karpathy/playground",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/playground/'"
+  },
+  {
+    "target": "karpathy/policy-gradient",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/policy-gradient/'"
+  },
+  {
+    "target": "karpathy/pong",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/pong/'"
+  },
+  {
+    "target": "karpathy/puckworld",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/pytorch",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/pytorch-cnn",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/pytorch-examples",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/pytorch-examples/'"
+  },
+  {
+    "target": "karpathy/pytorch-gan",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/pytorch-lightning",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/pytorch-lightning/'"
+  },
+  {
+    "target": "karpathy/pytorch-quantization",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/pytorch-quantization/'"
+  },
+  {
+    "target": "karpathy/pytorch-rl",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/pytorch-transformer",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/pytorch-tutorial",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/pytorch-tutorial/'"
+  },
+  {
+    "target": "karpathy/pytorch-vae",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/pytorch-vq-vae",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/pytorch-vq-vae/'"
+  },
+  {
+    "target": "karpathy/recurrent-js",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/reinforce",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/reinforce/'"
+  },
+  {
+    "target": "karpathy/reinforce-js",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/resnet",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/rl",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/rlgames",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/rnn",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/rnn/'"
+  },
+  {
+    "target": "karpathy/sanity",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/sanity/'"
+  },
+  {
+    "target": "karpathy/scripts",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/scripts/'"
+  },
+  {
+    "target": "karpathy/sketch-rnn",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/sketch-rnn/'"
+  },
+  {
+    "target": "karpathy/sortfix",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/sortfix/'"
+  },
+  {
+    "target": "karpathy/sortfix-demo",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/sortfixdemo",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/starter-code",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/starter-code/'"
+  },
+  {
+    "target": "karpathy/svm-js",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/talks",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/talks/'"
+  },
+  {
+    "target": "karpathy/tensorflow",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/tiny-shakespeare",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/tiny-shakespeare/'"
+  },
+  {
+    "target": "karpathy/tinyshakespeare",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/tinyshakespeare/'"
+  },
+  {
+    "target": "karpathy/torch",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/torch-rnn",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/torch-rnn/'"
+  },
+  {
+    "target": "karpathy/torch7",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/tsne",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/tsne/'"
+  },
+  {
+    "target": "karpathy/tsne-js",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/tsne-pytorch",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/tsne-pytorch/'"
+  },
+  {
+    "target": "karpathy/tsne-viz",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/tsne-viz/'"
+  },
+  {
+    "target": "karpathy/ttmik",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/ttmik/'"
+  },
+  {
+    "target": "karpathy/tweetnlp",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/twitter-bot",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/twitter-sentiment",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/twitter-sentiment/'"
+  },
+  {
+    "target": "karpathy/vae",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/vae/'"
+  },
+  {
+    "target": "karpathy/vgg",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/vision",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/vision/'"
+  },
+  {
+    "target": "karpathy/vq-vae",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/vq-vae/'"
+  },
+  {
+    "target": "karpathy/waterworld",
+    "reason": "repo not found or not public",
+    "error": "git ls-remote exited non-zero; GitHub returns an auth challenge for repos that do not exist or are not public"
+  },
+  {
+    "target": "karpathy/wavenet",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/wavenet/'"
+  },
+  {
+    "target": "karpathy/whisper",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/whisper/'"
+  },
+  {
+    "target": "karpathy/word2vec",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/word2vec/'"
+  },
+  {
+    "target": "karpathy/zero-to-hero",
+    "reason": "repo not found or not public",
+    "error": "fatal: Authentication failed for 'https://github.com/karpathy/zero-to-hero/'"
+  }
+]

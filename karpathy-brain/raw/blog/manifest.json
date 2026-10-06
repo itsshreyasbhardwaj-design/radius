@@ -1,0 +1,1365 @@
+{
+  "source": "blog",
+  "generated_at_utc": "2026-10-06T17:04:22.074975+00:00",
+  "collection": {
+    "source": "blog",
+    "collected_at_utc": "2026-10-06T17:03:45Z",
+    "method": "Cloned the Jekyll site source from GitHub (git clone --depth 1 --single-branch https://github.com/karpathy/karpathy.github.io) rather than scraping rendered HTML. Two reasons: (1) the rendered blog host karpathy.github.io is blocked by this environment's egress policy (403 CONNECT), so scraping was impossible; (2) even if reachable, the Jekyll repo is the raw truth — it contains the original post source as markdown in _posts/ with YAML front matter intact, plus about.md, index.html, feed.xml, _layouts/, _includes/, css/ and assets/, with no HTML template chrome, no navigation boilerplate and no lossy HTML-to-text conversion. The clone's .git directory was deleted after copying; no file was reformatted, converted or edited.",
+    "targets_collected": [
+      {
+        "target": "https://github.com/karpathy/karpathy.github.io",
+        "local_path": "karpathy.github.io/",
+        "what": "Full Jekyll source of the karpathy.github.io blog: 23 posts in _posts/ as raw markdown, plus about.md, index.html, feed.xml, nntutorial.md (the 'Hacker's Guide to Neural Networks' long-form piece, which lives at the repo root rather than in _posts/), layouts, includes, css and image assets."
+      },
+      {
+        "target": "https://github.com/karpathy/paper-notes",
+        "local_path": "paper-notes/",
+        "what": "Karpathy's long-form paper notes/reviews as raw markdown (matching_networks.md, vin.md, wikireading.md) plus figure images. Resolved via git ls-remote and cloned; .git stripped."
+      }
+    ],
+    "posts_captured": 23,
+    "date_range": {
+      "earliest": "2011-04-27",
+      "latest": "2026-02-12",
+      "derived_from": "_posts/ filename date prefixes under karpathy.github.io/_posts/",
+      "earliest_file": "2011-04-27-manually-classifying-cifar10.markdown",
+      "latest_file": "2026-02-12-microgpt.markdown"
+    },
+    "additional_long_form_captured_outside_posts": [
+      "karpathy.github.io/nntutorial.md",
+      "paper-notes/matching_networks.md",
+      "paper-notes/vin.md",
+      "paper-notes/wikireading.md"
+    ],
+    "completeness_caveat": "THIS IS THE GITHUB-HOSTED BLOG ONLY AND IS NOT A COMPLETE PICTURE OF KARPATHY'S PUBLIC BLOG WRITING. Specifically: (1) all posts on his newer blog karpathy.bearblog.dev are MISSING — that host is blocked by this environment's egress policy (curl: (56) CONNECT tunnel failed, response 403), and no GitHub-hosted mirror of it was found; (2) any Medium posts are MISSING — medium.com/@karpathy is blocked the same way (curl: (56) CONNECT tunnel failed, response 403). Note that karpathy.github.io/_posts/2018-01-20-medium.markdown exists in this corpus as a pointer/stub referring readers to Medium, so the Medium gap is a real, acknowledged hole in the record rather than a hypothetical one. Treat the 2022-2026 period as especially under-covered: the GitHub blog has only two posts dated after 2021 (2022-03-14, 2026-02-12), while the bearblog era is entirely absent. Any downstream analysis must not treat this corpus as the full set of his blog writing.",
+    "blocked_hosts": [
+      "karpathy.github.io (rendered blog; 403 CONNECT — worked around by cloning the source repo)",
+      "karpathy.bearblog.dev (403 CONNECT — content NOT recovered)",
+      "medium.com (403 CONNECT — content NOT recovered)"
+    ],
+    "hosts_that_worked": [
+      "github.com (git clone / git ls-remote over HTTPS)"
+    ],
+    "raw_fidelity_notes": [
+      "Files are byte-identical to what git delivered; nothing was reformatted, converted, renamed or summarized.",
+      "The .git directory was deleted from both clones.",
+      "Each clone is --depth 1 --single-branch, so no revision history is present — only the current tip of the default branch.",
+      "Binary image assets (png/jpeg/gif) were kept as-is and are reported as binary in the manifest."
+    ]
+  },
+  "counts": {
+    "files": 179,
+    "text_files": 45,
+    "binary_files": 134,
+    "total_bytes": 31038290,
+    "total_words": 110657,
+    "failures": 10
+  },
+  "files": [
+    {
+      "path": "karpathy.github.io/.gitignore",
+      "bytes": 16,
+      "word_count": 2,
+      "binary": false,
+      "sha256": "e10df125a4b4398455a13ce6b7ceda5415ae16b7c5d288c9b952876a6323bca6"
+    },
+    {
+      "path": "karpathy.github.io/Readme.md",
+      "bytes": 136,
+      "word_count": 22,
+      "binary": false,
+      "sha256": "b0418ca248b76938a115685fca61fbc3dde761fecd516ed3947e69ea5b7a8cc6"
+    },
+    {
+      "path": "karpathy.github.io/_config.yml",
+      "bytes": 342,
+      "word_count": 38,
+      "binary": false,
+      "sha256": "608599f3b7165067f8e282dd090aa34b0b94905174e3be147407a59b296c1931"
+    },
+    {
+      "path": "karpathy.github.io/_includes/footer.html",
+      "bytes": 3533,
+      "word_count": 141,
+      "binary": false,
+      "sha256": "9fa760ce12ddc2c6d0b92921f22ea389d210fbd178361471114c02a7e26b6162"
+    },
+    {
+      "path": "karpathy.github.io/_includes/head.html",
+      "bytes": 1112,
+      "word_count": 77,
+      "binary": false,
+      "sha256": "b1200490cbaf24a2f7bc062bf02888e1e90340a513feee76a7229f3a8f27e9f5"
+    },
+    {
+      "path": "karpathy.github.io/_includes/header.html",
+      "bytes": 1509,
+      "word_count": 94,
+      "binary": false,
+      "sha256": "2285ab93f220650ea05f785bc3099199c641551d295bafb0b04b564b4fcd2fc9"
+    },
+    {
+      "path": "karpathy.github.io/_layouts/default.html",
+      "bytes": 245,
+      "word_count": 27,
+      "binary": false,
+      "sha256": "5421fb5f77f698c35f61c79616d7d4c0996014323375c6b4f3294702f8d6139f"
+    },
+    {
+      "path": "karpathy.github.io/_layouts/page.html",
+      "bytes": 1384,
+      "word_count": 143,
+      "binary": false,
+      "sha256": "70c491f346acd0941a57f5778bb56aff81eec51661e0f9c4ebf1acfb3821b69d"
+    },
+    {
+      "path": "karpathy.github.io/_layouts/post.html",
+      "bytes": 1475,
+      "word_count": 153,
+      "binary": false,
+      "sha256": "8423fc58140d9e68c9c836f2b913a485c853ef29f603e1808331f2ad27f19849"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2011-04-27-manually-classifying-cifar10.markdown",
+      "bytes": 4873,
+      "word_count": 782,
+      "binary": false,
+      "sha256": "7f1aad05224ae6c304a0fce3c7bc0bb51b976bfd0a0215ef9c0798893ef48439"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2012-10-22-state-of-computer-vision.markdown",
+      "bytes": 6590,
+      "word_count": 1182,
+      "binary": false,
+      "sha256": "9d620c5ba478d41c485d956c6c12b32dee21cf6bacf7ff4f43ec84b4db43a8e7"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2013-11-23-chrome-extension-programming.markdown",
+      "bytes": 11196,
+      "word_count": 1715,
+      "binary": false,
+      "sha256": "54a8a9d4b7fb7257fffc892540dea7eaf27cc10922a79fb8b1964afec4d0c956"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2013-11-27-quantifying-hacker-news.markdown",
+      "bytes": 2959,
+      "word_count": 477,
+      "binary": false,
+      "sha256": "f6e1c4d4bc9416864ce3e18f8d40e3833a0614d797f02c890616eea59307daff"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2014-04-26-datascience-weekly-interview.markdown",
+      "bytes": 673,
+      "word_count": 77,
+      "binary": false,
+      "sha256": "71236a66ecf50603b6b290078682ae6e411dcdaf12d8c33c1bb156921730ce7c"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2014-07-01-switching-to-jekyll.markdown",
+      "bytes": 4562,
+      "word_count": 713,
+      "binary": false,
+      "sha256": "78cb454a8e5205ba17eec94d876d6e17c0cd7ee06c34c7a3441b0db648bb2726"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2014-07-02-visualizing-top-tweeps-with-t-sne-in-Javascript.markdown",
+      "bytes": 11062,
+      "word_count": 1625,
+      "binary": false,
+      "sha256": "c8fa6156a2839282b1f8127f559ffb07b4c6fc246564c2a733e32fdffe612be1"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2014-07-03-feature-learning-escapades.markdown",
+      "bytes": 17769,
+      "word_count": 2680,
+      "binary": false,
+      "sha256": "5b497fa0156774f972471bb77ba46af187c6481eff89fa69046a7b9b5a56fd9e"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2014-08-03-quantifying-productivity.markdown",
+      "bytes": 11143,
+      "word_count": 1834,
+      "binary": false,
+      "sha256": "502215be7c019ff21f0479e16cf277a61a17e380a735b7a2b84cae7e872b6b5c"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2014-09-02-what-i-learned-from-competing-against-a-convnet-on-imagenet.markdown",
+      "bytes": 20174,
+      "word_count": 3140,
+      "binary": false,
+      "sha256": "daa188be5948b98af280aa70512b36b05362d8ff084cc85ecd37882d825037b5"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2015-03-30-breaking-convnets.markdown",
+      "bytes": 23250,
+      "word_count": 3670,
+      "binary": false,
+      "sha256": "3d31509c260750cdf76edbc6f110e703926002972a3085cb0dba6bdf2c3659bf"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2015-05-21-rnn-effectiveness.markdown",
+      "bytes": 53579,
+      "word_count": 8014,
+      "binary": false,
+      "sha256": "85b34fcfbd4ea8f826575c5e237dcd8834f525c89332c14295c1f42a37776087"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2015-10-25-selfie.markdown",
+      "bytes": 27876,
+      "word_count": 4264,
+      "binary": false,
+      "sha256": "6d511fb987636a0a8d45c9c86bc774e4ea0ce060898398f134e0ecbac3e812d7"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2015-11-20-ai.markdown",
+      "bytes": 48552,
+      "word_count": 8105,
+      "binary": false,
+      "sha256": "3c597f75b9cacd05904c217cfc11bab253c49d7d723263436b5daeccfd312a75"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2016-05-31-rl.markdown",
+      "bytes": 44741,
+      "word_count": 7153,
+      "binary": false,
+      "sha256": "80a8122fe77f8b01f66dbab9b303b91e8c8952dd392977ba537b01e2484a1c72"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2016-09-07-phd.markdown",
+      "bytes": 49023,
+      "word_count": 8374,
+      "binary": false,
+      "sha256": "1a290da47baa9225829f564773dc02d3f1d62285c3c8322c307293f9efba9d44"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2018-01-20-medium.markdown",
+      "bytes": 738,
+      "word_count": 122,
+      "binary": false,
+      "sha256": "ad69d55d309ed0d0ecdf620eeddd448e381ca92bdfdd028d65c877415d23c95b"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+      "bytes": 23695,
+      "word_count": 3903,
+      "binary": false,
+      "sha256": "4776c747b94b9265e0b61a5636e7f3c0cd9701842f457a968844923b5b8c8e20"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2020-06-11-biohacking-lite.markdown",
+      "bytes": 34227,
+      "word_count": 5395,
+      "binary": false,
+      "sha256": "005881b79dc900652aaca720d7d88d1d686f812286b06bb6897cd051c2a66b17"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2021-03-27-forward-pass.markdown",
+      "bytes": 7682,
+      "word_count": 1304,
+      "binary": false,
+      "sha256": "5437ff918bfba97a1a1d070b5bbf26653439a8cf26dc4304b54e791bccd911ad"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2021-06-21-blockchain.markdown",
+      "bytes": 85394,
+      "word_count": 12756,
+      "binary": false,
+      "sha256": "ea5af5222063ca7731462cf98087f14989259c8cb19ffc717bcdf34a1c90498e"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2022-03-14-lecun1989.markdown",
+      "bytes": 17105,
+      "word_count": 2733,
+      "binary": false,
+      "sha256": "ddf249ec540472cb0168bd265ce6dfb6d5302d8fe9011928a226dbff89a78968"
+    },
+    {
+      "path": "karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+      "bytes": 37111,
+      "word_count": 5676,
+      "binary": false,
+      "sha256": "1095ca238168247ec2de35b5a7904017b621ebe67deb66e3df2120d9124b78ca"
+    },
+    {
+      "path": "karpathy.github.io/about.md",
+      "bytes": 112,
+      "word_count": 13,
+      "binary": false,
+      "sha256": "3f18c9ccbe7c9ebf39a56e2e73083fcc5aa26156087d9bc2c76c02976facfcd0"
+    },
+    {
+      "path": "karpathy.github.io/assets/ai/.DS_Store",
+      "bytes": 6148,
+      "word_count": null,
+      "binary": true,
+      "sha256": "9a632ec0fd3020940fba6567ad18bc2502fd3ea74c6afa05f76040792f5f97b9"
+    },
+    {
+      "path": "karpathy.github.io/assets/ai/digibrain.jpg",
+      "bytes": 186555,
+      "word_count": null,
+      "binary": true,
+      "sha256": "0b1177da680308eeac74a7964f26401066e2a211c76e2d8034364eabaa5fa06e"
+    },
+    {
+      "path": "karpathy.github.io/assets/ai/eye2.jpg",
+      "bytes": 40211,
+      "word_count": null,
+      "binary": true,
+      "sha256": "e3b9015a2ec8152ce4eb260a34d262034f680dc6816de455f8b04d9f771f5bda"
+    },
+    {
+      "path": "karpathy.github.io/assets/ai/graph.png",
+      "bytes": 281739,
+      "word_count": null,
+      "binary": true,
+      "sha256": "e334d44394dddf8bb693a87f274414ca6d8ca91f233eabb1b52be47a1f823bfd"
+    },
+    {
+      "path": "karpathy.github.io/assets/ai/hand.jpg",
+      "bytes": 179527,
+      "word_count": null,
+      "binary": true,
+      "sha256": "e43a9a9382586d17129857138204b4e88220ec0309305f7cf492bf9b9bb7f47c"
+    },
+    {
+      "path": "karpathy.github.io/assets/ai/lifetree.gif",
+      "bytes": 100540,
+      "word_count": null,
+      "binary": true,
+      "sha256": "410701d861893a0bffb34b8eeddeb662fc1c8b2a98a86699b83019da9203585b"
+    },
+    {
+      "path": "karpathy.github.io/assets/ai/neocortex.png",
+      "bytes": 76251,
+      "word_count": null,
+      "binary": true,
+      "sha256": "ba0d37399ad67e1788c4a999c41c4b0a5d3f12f07bb076d8bd3b384c53970cbc"
+    },
+    {
+      "path": "karpathy.github.io/assets/ai/ocean.jpeg",
+      "bytes": 71460,
+      "word_count": null,
+      "binary": true,
+      "sha256": "e77bdbb313d6dadd1ac2e726dcc2d80e64ec228a6671f0f65e2e108bd206136c"
+    },
+    {
+      "path": "karpathy.github.io/assets/ai/psych.jpg",
+      "bytes": 300612,
+      "word_count": null,
+      "binary": true,
+      "sha256": "79367362e0dec03f72446a026eb7326956553724190052ce45b410986bf50b96"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/atp_recycling.png",
+      "bytes": 334984,
+      "word_count": null,
+      "binary": true,
+      "sha256": "199b6b07c41ef131827a5e77d08b8fb59573f04046c753807ba4bb81402f172a"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/atpspring.svg",
+      "bytes": 87151,
+      "word_count": 2288,
+      "binary": false,
+      "sha256": "5cb1352c0a489f2b2d4ad1b89b8ccd121c74e86dfcd1e564fba98c42b64a03d6"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/atpsynthesis.svg",
+      "bytes": 61967,
+      "word_count": 1297,
+      "binary": false,
+      "sha256": "98f430af90cdb716f0e2b7da7a2b3536666fef74cd2348f44c038a21552f83c8"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/body_composition.png",
+      "bytes": 114609,
+      "word_count": null,
+      "binary": true,
+      "sha256": "9f124454d8bfea1f184ead7d0924c45075f7e58b6bdd753da87be419fa5c9cd8"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/combustion.jpeg",
+      "bytes": 86213,
+      "word_count": null,
+      "binary": true,
+      "sha256": "802f3538d26fe0d548b37fcd59a6e366d41a26780382959a66a0e2ce1e10d50d"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/combustion2.png",
+      "bytes": 137089,
+      "word_count": null,
+      "binary": true,
+      "sha256": "558a56a715e0d98533fae8b4bc0bf56c0dd71dd155fcac764a20073d69f9ccb9"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/cookie.jpg",
+      "bytes": 210603,
+      "word_count": null,
+      "binary": true,
+      "sha256": "fa5650939bf38a5939032265036392f9451c253f0c856e77dfa9dc64748d3a03"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/dexa.png",
+      "bytes": 78966,
+      "word_count": null,
+      "binary": true,
+      "sha256": "48f0480e64887a7d07cb1eeb642b4605ccf8dc13b8c6131d5b60a26184bc9af2"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/energy_metabolism_1.png",
+      "bytes": 347337,
+      "word_count": null,
+      "binary": true,
+      "sha256": "2f328aa9ca5d906cb0dc95815bb5aad7e06c7d1fecdba1d613345cf7a058cc78"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/expected_loss.png",
+      "bytes": 35163,
+      "word_count": null,
+      "binary": true,
+      "sha256": "f6b980cf325eedcf00114f1a96006f8dc060c8601cf66799b645ea6c389f7d3b"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/subway_map.png",
+      "bytes": 292255,
+      "word_count": null,
+      "binary": true,
+      "sha256": "6c1b90c4693708f2bb3c388ec6e92babee8b5c55b3635e612faa141ae0e694cb"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/sweating.jpg",
+      "bytes": 105686,
+      "word_count": null,
+      "binary": true,
+      "sha256": "67443967fc0e8681d5cd759b693808c407bb9a24ad241c0ca94fde18a10aa6c5"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/weight.png",
+      "bytes": 56128,
+      "word_count": null,
+      "binary": true,
+      "sha256": "5edc9a34a3776ee90d91dfcdbbcadbb2bb83a727940ee1012eeb3f442d49ee35"
+    },
+    {
+      "path": "karpathy.github.io/assets/bio/weight_loss.gif",
+      "bytes": 23722,
+      "word_count": null,
+      "binary": true,
+      "sha256": "54ca58359206d43fece0f70390930a0a51d0cd6bd7f797a4816fc12cff9bc202"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/banana.jpeg",
+      "bytes": 33245,
+      "word_count": null,
+      "binary": true,
+      "sha256": "ae164b9375389921a9584565bba0dffc4a3fdf55853aafcb32bbe02e9ee9b626"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/break1.jpeg",
+      "bytes": 87993,
+      "word_count": null,
+      "binary": true,
+      "sha256": "5dfef5876bb996507375ed9abb98136dd809db1f79e5c689fde0b28cbe2bb31f"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/break2.jpeg",
+      "bytes": 63545,
+      "word_count": null,
+      "binary": true,
+      "sha256": "cc72bf8f5c386f00e27407f110ed3cf5e6d3d58e876ad3b78ce00f230fb499af"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/breakconv.png",
+      "bytes": 107219,
+      "word_count": null,
+      "binary": true,
+      "sha256": "34d51f5e6afcf94e0d43108fb3b09d02d1023d37dabf9d29e77a7725a30f0f11"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/fish.jpeg",
+      "bytes": 85286,
+      "word_count": null,
+      "binary": true,
+      "sha256": "2880a34230d3110c32609984f8912325f88fc6f97ce20a84aba7835209fe82cd"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/fool1.jpeg",
+      "bytes": 105213,
+      "word_count": null,
+      "binary": true,
+      "sha256": "3176f4e96ab05404143b2973e7df47c376010024cf06dea370fe601aeeb90735"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/fool2.jpeg",
+      "bytes": 104407,
+      "word_count": null,
+      "binary": true,
+      "sha256": "328b22ff99a1f9066bd519fb0acba75db4d9af85f1a6d2da348c7d621f27e569"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/noise1.jpeg",
+      "bytes": 63921,
+      "word_count": null,
+      "binary": true,
+      "sha256": "e0b90c43cdc0eba063c5d3d4abf6a4cbe48ce5aae7ff5a8c809d433df03f1c2c"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/noise2.jpeg",
+      "bytes": 64649,
+      "word_count": null,
+      "binary": true,
+      "sha256": "a2a4dd164578f852b8d15fbec6466d9a42092509b9e0dbb79ad5acb82dec22ad"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/rapeseed.jpeg",
+      "bytes": 121682,
+      "word_count": null,
+      "binary": true,
+      "sha256": "036cfa3102f7597d062b2ec1c7be7eb9066005f3b0f41f2bb2cae54bc4f510ee"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/rapeseed2.jpeg",
+      "bytes": 93141,
+      "word_count": null,
+      "binary": true,
+      "sha256": "fbdf3d504f89fb87a62592ed33f7bd5f94f5ce5de9554af309cdd93aeb93b7c0"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/szegedy.jpeg",
+      "bytes": 125526,
+      "word_count": null,
+      "binary": true,
+      "sha256": "2126546832bc0edc03b570f9f6a2796996e16b71ed2594f4de1d577ce86a8cb3"
+    },
+    {
+      "path": "karpathy.github.io/assets/break/templates.jpeg",
+      "bytes": 93267,
+      "word_count": null,
+      "binary": true,
+      "sha256": "f7f88984360ad15003d3e159be49488f315a92328e530562804d3dbffbb3cc34"
+    },
+    {
+      "path": "karpathy.github.io/assets/chrome1.jpeg",
+      "bytes": 15499,
+      "word_count": null,
+      "binary": true,
+      "sha256": "4e3308f95cb8f0ecb3075b448688154dbd5c4806f8b6e98ef6ce17baaf6ca4d4"
+    },
+    {
+      "path": "karpathy.github.io/assets/chrome2.jpeg",
+      "bytes": 45290,
+      "word_count": null,
+      "binary": true,
+      "sha256": "b9313b3e848bf98ef2b98d291a55d7f9784d6681873c40a2cf61484387d0c479"
+    },
+    {
+      "path": "karpathy.github.io/assets/chrome3.jpeg",
+      "bytes": 5419,
+      "word_count": null,
+      "binary": true,
+      "sha256": "bc00b98842df9d52ef7287af019a335439a16a3170515286d30bd20c7616a186"
+    },
+    {
+      "path": "karpathy.github.io/assets/chrome4.jpeg",
+      "bytes": 68394,
+      "word_count": null,
+      "binary": true,
+      "sha256": "5d9870e5899eed5c24ab5e315da394b87608010220ce2cdfcd39e8c4f4cfe329"
+    },
+    {
+      "path": "karpathy.github.io/assets/cifar_predict.jpg",
+      "bytes": 152974,
+      "word_count": null,
+      "binary": true,
+      "sha256": "16ea1d441c8b1ea7734c383e97d9428b02ece860b6d2feca24fd1b88aedaf68f"
+    },
+    {
+      "path": "karpathy.github.io/assets/cifar_preview.png",
+      "bytes": 340619,
+      "word_count": null,
+      "binary": true,
+      "sha256": "5237624e38109832659c114544f1074dd10c5968ff892bfe4c154e47ef39e962"
+    },
+    {
+      "path": "karpathy.github.io/assets/cifar_weirdimages.png",
+      "bytes": 50033,
+      "word_count": null,
+      "binary": true,
+      "sha256": "085d4e7a48f6f673233226fb18ff0180099ee5d6ee618fc18c3c4a2a84cb82cf"
+    },
+    {
+      "path": "karpathy.github.io/assets/cnntsne.jpeg",
+      "bytes": 155930,
+      "word_count": null,
+      "binary": true,
+      "sha256": "c913523f1bc9f001c87cf6242b168c7bfd5675397568b7710a51f94cd2db3438"
+    },
+    {
+      "path": "karpathy.github.io/assets/hn.jpg",
+      "bytes": 136504,
+      "word_count": null,
+      "binary": true,
+      "sha256": "a3daf85d32fad8dbbcc46578a043578a9d68f8c206253c9b5e2e61faaa9fc2eb"
+    },
+    {
+      "path": "karpathy.github.io/assets/ilsvrc1.png",
+      "bytes": 413553,
+      "word_count": null,
+      "binary": true,
+      "sha256": "59c4f7468c631f830fbf0b57862c4a8513d529cf5e7b9d5bb4c735fd04cc04d5"
+    },
+    {
+      "path": "karpathy.github.io/assets/ilsvrc2.png",
+      "bytes": 226609,
+      "word_count": null,
+      "binary": true,
+      "sha256": "50b6c39e3e201566a096d4fd1e22c983469d0630dba214eead0169d322a1fe52"
+    },
+    {
+      "path": "karpathy.github.io/assets/ilsvrc3.png",
+      "bytes": 349667,
+      "word_count": null,
+      "binary": true,
+      "sha256": "f63b8eb233f048af6f78ad94a94816b825287717b69bedb026f7fa4f3884250f"
+    },
+    {
+      "path": "karpathy.github.io/assets/lecun/errors32.png",
+      "bytes": 25086,
+      "word_count": null,
+      "binary": true,
+      "sha256": "c1e31735b231ec4c6bdf2a6383b428f58579ce2097cb8a72e108feb1cfcecb33"
+    },
+    {
+      "path": "karpathy.github.io/assets/lecun/lecun1989.png",
+      "bytes": 195409,
+      "word_count": null,
+      "binary": true,
+      "sha256": "68fe0de5c7115607ae904a0aa26aa69a42a84ad79591e274b88f0f62038aa250"
+    },
+    {
+      "path": "karpathy.github.io/assets/megoogle.jpg",
+      "bytes": 18792,
+      "word_count": null,
+      "binary": true,
+      "sha256": "127409a4af8acd8d5e63c7a44565d52179999b487b1a49db392207fa56aa31c1"
+    },
+    {
+      "path": "karpathy.github.io/assets/microgpt.jpg",
+      "bytes": 1686666,
+      "word_count": null,
+      "binary": true,
+      "sha256": "87f9c36184d00bcbc046d3d3bd883829dd32840538541decc3c25a6fdefb0d19"
+    },
+    {
+      "path": "karpathy.github.io/assets/nips2012.jpeg",
+      "bytes": 26169,
+      "word_count": null,
+      "binary": true,
+      "sha256": "d572d85e9cc3a6c7c4f063e374587517eb5aa0c00e38dad4a7a102a0fce650ba"
+    },
+    {
+      "path": "karpathy.github.io/assets/obamafunny.jpg",
+      "bytes": 249084,
+      "word_count": null,
+      "binary": true,
+      "sha256": "e56ffd4596435573700034293b6eab861de9c9d5d5891e481fb24967bc1da8f7"
+    },
+    {
+      "path": "karpathy.github.io/assets/objectdiscovery.jpeg",
+      "bytes": 39455,
+      "word_count": null,
+      "binary": true,
+      "sha256": "f75ee64967b0a6f4c044d031b0f05b93aafcf44538864d2154f3179c2185991b"
+    },
+    {
+      "path": "karpathy.github.io/assets/phd/adviser.gif",
+      "bytes": 71140,
+      "word_count": null,
+      "binary": true,
+      "sha256": "bb1a10c4c64aa8f6f26ea17dae215092070b26e7778e614b30b073c9b8c587b5"
+    },
+    {
+      "path": "karpathy.github.io/assets/phd/arxiv-papers.png",
+      "bytes": 2425835,
+      "word_count": null,
+      "binary": true,
+      "sha256": "7cda1a5fc9a57c722ff44d6f7f23d16a5855a21cb774aaf757db3d240c56577a"
+    },
+    {
+      "path": "karpathy.github.io/assets/phd/code.jpg",
+      "bytes": 142273,
+      "word_count": null,
+      "binary": true,
+      "sha256": "023fb368cfbe581230febe8da989839bccec23e23b90660b5558d8b1d2dc60a1"
+    },
+    {
+      "path": "karpathy.github.io/assets/phd/latex.png",
+      "bytes": 114802,
+      "word_count": null,
+      "binary": true,
+      "sha256": "e0f626fa2375a00381ab4498e2363bcac848c0c68c22b575ccc790f82685260a"
+    },
+    {
+      "path": "karpathy.github.io/assets/phd/phds.jpg",
+      "bytes": 415165,
+      "word_count": null,
+      "binary": true,
+      "sha256": "e06084470178ec1f6b03af95da9122c559f95d900e0d846ddca125ab69c3ede3"
+    },
+    {
+      "path": "karpathy.github.io/assets/phd/posters.jpg",
+      "bytes": 722881,
+      "word_count": null,
+      "binary": true,
+      "sha256": "640c412250a271fc5bb78af0299dd0c9c2b8879743d059f9dfb0e0f623a05b66"
+    },
+    {
+      "path": "karpathy.github.io/assets/phd/talk.jpg",
+      "bytes": 89092,
+      "word_count": null,
+      "binary": true,
+      "sha256": "1650990124c33ee496c7824d2cb747ed19875c4e99ad39b90aa122cf19912ed1"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/discounted.png",
+      "bytes": 26255,
+      "word_count": null,
+      "binary": true,
+      "sha256": "77c7aefd4013f3dca3b202664f8a198be6c1422f9bb7ed1f65be462078c7de89"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/episodes.png",
+      "bytes": 45069,
+      "word_count": null,
+      "binary": true,
+      "sha256": "f76496c3bde2ed76f0633d06bd5cccb0e42a31d12e8cd1dc3b43f07752d95e76"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/frostbite.jpg",
+      "bytes": 31040,
+      "word_count": null,
+      "binary": true,
+      "sha256": "2e453f28927cdef4ea9cf3cdb34707300ec9055829d2a4233b5d35f9f2fe17b3"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/mdp.png",
+      "bytes": 34603,
+      "word_count": null,
+      "binary": true,
+      "sha256": "e37a36eb2e02d8400bce8341620be89d87f86d791612d584148ebe08fb2cd7fb"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/montezuma.png",
+      "bytes": 2289,
+      "word_count": null,
+      "binary": true,
+      "sha256": "86ee5a362c175c06d2e5e70df5ce995f0194f161b734a5feed353246b503dfd2"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/nondiff1.png",
+      "bytes": 48695,
+      "word_count": null,
+      "binary": true,
+      "sha256": "d5a9d35f8ada986d2c7efb25c0d1e510461c1423ca12b98cfe0509bc930acf88"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/nondiff2.png",
+      "bytes": 76786,
+      "word_count": null,
+      "binary": true,
+      "sha256": "d375a88fba1424e72498140fd7ea82e7f57fbaad3f5d4ffe3495a639773b2e03"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/pg.png",
+      "bytes": 167224,
+      "word_count": null,
+      "binary": true,
+      "sha256": "c1b42934a4b865b2708154900625f5e49384efbb2aa95ac545a35833166a8596"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/policy.png",
+      "bytes": 54059,
+      "word_count": null,
+      "binary": true,
+      "sha256": "61dae07390725b6e2608886632dc3b81646e52c4488f22d0f585da1170cf5b3d"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/pong.gif",
+      "bytes": 16291,
+      "word_count": null,
+      "binary": true,
+      "sha256": "de34525d4b4af93b0212899d41777f974c07aaf06d50c9917f23a41fb909aa93"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/preview.jpeg",
+      "bytes": 54860,
+      "word_count": null,
+      "binary": true,
+      "sha256": "54cd2d4e739af5ae0a3c3b7315bb1aa22c83dbacb6ecf08ec5b0bae0dab3a761"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/rl.png",
+      "bytes": 79987,
+      "word_count": null,
+      "binary": true,
+      "sha256": "5e113000cadbce727911c3328aab58d036c65b15ea28e914e7394598d3e41383"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/sl.png",
+      "bytes": 76459,
+      "word_count": null,
+      "binary": true,
+      "sha256": "0967fa881440eee4fd210c607c9eb7d31885628aa91dcdba30828379c51f4ccd"
+    },
+    {
+      "path": "karpathy.github.io/assets/rl/weights.png",
+      "bytes": 207318,
+      "word_count": null,
+      "binary": true,
+      "sha256": "cc94606b7cbc9689358f76da7cd5d4112578d7b9a71c11a3ff9503fb50e0c727"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/charseq.jpeg",
+      "bytes": 84774,
+      "word_count": null,
+      "binary": true,
+      "sha256": "2c7af4a4e995715bdcb53a98011ba5c8aa957136dc7f77e9fe51ab8b1ef4de66"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/diags.jpeg",
+      "bytes": 68679,
+      "word_count": null,
+      "binary": true,
+      "sha256": "869c5a57b979a6c83c35bfcf95451340b650211082c73c9da76477679d161b1c"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/diags_old.jpeg",
+      "bytes": 86311,
+      "word_count": null,
+      "binary": true,
+      "sha256": "d853bd28e17e738eb32fdca63010b75b2994fe8fdad32317bafa46ff4bffaf6e"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/house_generate.gif",
+      "bytes": 626173,
+      "word_count": null,
+      "binary": true,
+      "sha256": "ba4af8e08605217b34cdef6eb59445b7f63e821ea1d87d3fe4c275e376a6766c"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/house_read.gif",
+      "bytes": 839099,
+      "word_count": null,
+      "binary": true,
+      "sha256": "34e4fe80cb0f8b8aaca6228a337ae7177ab1feecc39a41f4ad8b8aae72a40bc9"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/latex1.jpeg",
+      "bytes": 161316,
+      "word_count": null,
+      "binary": true,
+      "sha256": "aece6f411859a83425450c82e99732aa8b059e57eeee47c5c5470575a202f4bd"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/latex2.jpeg",
+      "bytes": 46243,
+      "word_count": null,
+      "binary": true,
+      "sha256": "a23f5540898c03cf7722d228f2d1b5ae78493ff040b5c20420f38e346b3ace49"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/latex3.jpeg",
+      "bytes": 231685,
+      "word_count": null,
+      "binary": true,
+      "sha256": "ef2088e44cf3f49ebb424f6822b129e9a2b2c02c04bcaefcd37106353ca99279"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/latex4.jpeg",
+      "bytes": 313757,
+      "word_count": null,
+      "binary": true,
+      "sha256": "f5172b4525321d9eb948b83c24bb488ae5b89129820c03cd54f85be22af63f8a"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/pane1.png",
+      "bytes": 633413,
+      "word_count": null,
+      "binary": true,
+      "sha256": "ee2f63f202cef85a3550ac14e03ff2f59757de9e2407696de6fa8adcabaebf33"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/pane2.png",
+      "bytes": 384662,
+      "word_count": null,
+      "binary": true,
+      "sha256": "b45e5959c52bced640f76e66d27d256d1a0212d506134e75629c66c1ae922527"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/under1.jpeg",
+      "bytes": 515889,
+      "word_count": null,
+      "binary": true,
+      "sha256": "26218f81a1d7ef58af4a6d7b9e7d5bfb7cf704142d044526e00ddcd480fc74dc"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/under2.jpeg",
+      "bytes": 530360,
+      "word_count": null,
+      "binary": true,
+      "sha256": "41f9638eacaa6084c3c8ce2481a083158a82e0a34defc7e247da2d144b841845"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/under3.jpeg",
+      "bytes": 261944,
+      "word_count": null,
+      "binary": true,
+      "sha256": "58d653f57c7ebea00865cd0a7c0066a57407c2df89c3290b4b39fd3b6b6c9f6c"
+    },
+    {
+      "path": "karpathy.github.io/assets/rnn/under4.jpeg",
+      "bytes": 114932,
+      "word_count": null,
+      "binary": true,
+      "sha256": "32ce062e9e6c59a31d17e2edb23d9f7d09581292aa3470398de416a757628c9f"
+    },
+    {
+      "path": "karpathy.github.io/assets/rssicon.svg",
+      "bytes": 6300,
+      "word_count": 261,
+      "binary": false,
+      "sha256": "587090e4479f1ba49df1dcc1f187c670bb60bde1f1580490ea3d8e4ea242f9c3"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/celebs_grid_render.jpg",
+      "bytes": 1944422,
+      "word_count": null,
+      "binary": true,
+      "sha256": "1b525e7595ad19d1470ea58dad5236d1a5f38263b1c268fd08ad4956de24cbae"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/cnnvis.jpg",
+      "bytes": 117496,
+      "word_count": null,
+      "binary": true,
+      "sha256": "0ac3b94f7d48a32a5ecb4baf530e355b296d06393414b3936c17bb9b338fc1ad"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/crop2.jpg",
+      "bytes": 70897,
+      "word_count": null,
+      "binary": true,
+      "sha256": "fd3db937da6ba6839ff60da31f90eeb37a700087e4edb6c07d07e3c9fa2adad4"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/crops1.jpg",
+      "bytes": 128002,
+      "word_count": null,
+      "binary": true,
+      "sha256": "4544d6f09c44eba55333f3161298499a8d24dde9a6b9f21a44b51f2c7aa4cfeb"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/gif2.gif",
+      "bytes": 2122948,
+      "word_count": null,
+      "binary": true,
+      "sha256": "5ae3a9c21bab60fc170fe0cf0047d30b4888bbc460bc25fad95ba41a02df503b"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/grid_render_all.jpg",
+      "bytes": 867353,
+      "word_count": null,
+      "binary": true,
+      "sha256": "2c791c55bc1efcdf74f4e3bf22635cecbbfd7997187bec1f7abbec609bd5fce4"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/grid_render_best.jpg",
+      "bytes": 332905,
+      "word_count": null,
+      "binary": true,
+      "sha256": "ea58afff56a3f3e8a33d53eddd8c1db6288183ea41217ee37dfd3f8ba4f7bca2"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/grid_render_continuum.jpg",
+      "bytes": 903642,
+      "word_count": null,
+      "binary": true,
+      "sha256": "d20ae89de64c8a5db947b50b09f37dc56f2d7154b7ef487011691cb2dd2fbc90"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/grid_render_posneg.jpg",
+      "bytes": 242144,
+      "word_count": null,
+      "binary": true,
+      "sha256": "2bfd0c45e5de4290d4cdc58b6b56898e154257f1d1060640246f65d148e82929"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/grid_render_tsne_reduced.jpg",
+      "bytes": 346544,
+      "word_count": null,
+      "binary": true,
+      "sha256": "32aec96f8141776854a2b251b649b86c9be7f5ce25c9982aa9bd95e75108f885"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/grid_render_worst.jpg",
+      "bytes": 202042,
+      "word_count": null,
+      "binary": true,
+      "sha256": "469b44eef896e575bbc39d564e8be14d178ef4a93c5cd7084ea7464683cfd7e0"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/males.jpg",
+      "bytes": 183840,
+      "word_count": null,
+      "binary": true,
+      "sha256": "52c189da056823781640a5bd4da55c1a0eb5e6321fa4ba2baf6e7d5a8f051483"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/selfiebot2.png",
+      "bytes": 122985,
+      "word_count": null,
+      "binary": true,
+      "sha256": "75dad86cfba75cb24a6b77bd10881315694dad25784d1eafb2cd6051a1fd8e34"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/teaser.jpeg",
+      "bytes": 399109,
+      "word_count": null,
+      "binary": true,
+      "sha256": "6830d096c4a21355146701fe0f383630b84b1c2dbab2919d5ed8fa6fb23518f1"
+    },
+    {
+      "path": "karpathy.github.io/assets/selfie/useful.jpg",
+      "bytes": 274786,
+      "word_count": null,
+      "binary": true,
+      "sha256": "a4a7c76e462c11f52db24faef121c427b00edf92a1ed89cdba354b677db9f521"
+    },
+    {
+      "path": "karpathy.github.io/assets/sportspredict.jpeg",
+      "bytes": 156994,
+      "word_count": null,
+      "binary": true,
+      "sha256": "f40ea28f25c549cbaa4eaa546ecca2bb9755485665e0381995bd6a5f55d03c6a"
+    },
+    {
+      "path": "karpathy.github.io/assets/tsne_eg.jpeg",
+      "bytes": 52376,
+      "word_count": null,
+      "binary": true,
+      "sha256": "49eb87e2d75cc45d1af901e7099dfaf885a1c22d53f692a0ff396a09f02a01fd"
+    },
+    {
+      "path": "karpathy.github.io/assets/tsne_preview.jpeg",
+      "bytes": 93579,
+      "word_count": null,
+      "binary": true,
+      "sha256": "374399421b9786c25cc5c63cd7bb99dc4043ad64d4d829909a648e3e4e90ec05"
+    },
+    {
+      "path": "karpathy.github.io/assets/tsne_sentprepro.jpeg",
+      "bytes": 165449,
+      "word_count": null,
+      "binary": true,
+      "sha256": "adf38cb46ba3f065284c148516aecaf86308885c23adcd8a59f43081dd3f5904"
+    },
+    {
+      "path": "karpathy.github.io/assets/ulogme_mv1.jpeg",
+      "bytes": 214673,
+      "word_count": null,
+      "binary": true,
+      "sha256": "5a04f38374ea25afb98d79650bace72ffc76bae15d9f67ebff666434fc1dc44f"
+    },
+    {
+      "path": "karpathy.github.io/assets/ulogme_mv2.jpeg",
+      "bytes": 88972,
+      "word_count": null,
+      "binary": true,
+      "sha256": "19a38c595d9f3b699d550405d003727979dd1f42ea7482787e7104606778502d"
+    },
+    {
+      "path": "karpathy.github.io/assets/ulogme_mv3.jpeg",
+      "bytes": 136787,
+      "word_count": null,
+      "binary": true,
+      "sha256": "77d4b9d34804b4ea1730010284e1c92fcd75b39c6b0bd005c70cfce20e542fe2"
+    },
+    {
+      "path": "karpathy.github.io/assets/ulogme_sv1.jpeg",
+      "bytes": 31973,
+      "word_count": null,
+      "binary": true,
+      "sha256": "3f771a93905bdbd81992dcb0c50dbf5baba82854fbce289d50876558721f5777"
+    },
+    {
+      "path": "karpathy.github.io/assets/ulogme_sv2.jpeg",
+      "bytes": 62918,
+      "word_count": null,
+      "binary": true,
+      "sha256": "1c17874370f5c9b977ac1671a6dfbe9821453c5289b887fb9cf0664683f0d7ac"
+    },
+    {
+      "path": "karpathy.github.io/assets/ulogme_sv3.jpeg",
+      "bytes": 87522,
+      "word_count": null,
+      "binary": true,
+      "sha256": "046240a25894b52c47a9e92375f97a401ef987274889e92ef4c9b7729674f0f3"
+    },
+    {
+      "path": "karpathy.github.io/assets/ulogme_sv4.jpeg",
+      "bytes": 38871,
+      "word_count": null,
+      "binary": true,
+      "sha256": "9d65833b0275b3b15cc8534f89d3c017d111c4918b1ab81f53d21bc375fecb91"
+    },
+    {
+      "path": "karpathy.github.io/assets/ulogmeoverview.jpeg",
+      "bytes": 151121,
+      "word_count": null,
+      "binary": true,
+      "sha256": "de13e7988e41fb4e0d99313640f18ae355988c3d62c98377b649b151123ac6be"
+    },
+    {
+      "path": "karpathy.github.io/assets/zeilercnnfeatures.jpeg",
+      "bytes": 106362,
+      "word_count": null,
+      "binary": true,
+      "sha256": "e497342ffbdfe5c5e9c6a33855e2ac1890277084760f5710d999370122997453"
+    },
+    {
+      "path": "karpathy.github.io/css/main.css",
+      "bytes": 10218,
+      "word_count": 1360,
+      "binary": false,
+      "sha256": "9ca3d15e5b5ed79d86a94f79c35fc0c49ee545e36597305eee294b1138d4bf02"
+    },
+    {
+      "path": "karpathy.github.io/feed.xml",
+      "bytes": 1292,
+      "word_count": 129,
+      "binary": false,
+      "sha256": "10feb472ba6b07a8b707d45dcc37284e4e1ac55960dab6c0b4035be331648bbc"
+    },
+    {
+      "path": "karpathy.github.io/index.html",
+      "bytes": 369,
+      "word_count": 44,
+      "binary": false,
+      "sha256": "0faffd72b704e909f06b130a0036012969eccf0e4349511783b87e512bcb2ca6"
+    },
+    {
+      "path": "karpathy.github.io/nntutorial.md",
+      "bytes": 82472,
+      "word_count": 14021,
+      "binary": false,
+      "sha256": "3774207df092b971d5f5f1ca083081a45187abc7e20e27b67630fbd62f417e7e"
+    },
+    {
+      "path": "paper-notes/.gitignore",
+      "bytes": 11,
+      "word_count": 1,
+      "binary": false,
+      "sha256": "ce977fd6e83ee16b2d6b9710bc0b65f7848446b7c5f6b3c107c603c37469fb7b"
+    },
+    {
+      "path": "paper-notes/Readme.md",
+      "bytes": 65,
+      "word_count": 12,
+      "binary": false,
+      "sha256": "2de81554f0d84629c4d042ced43ac2af9c4b1929f89b3d5ee87af44f19a1d094"
+    },
+    {
+      "path": "paper-notes/img/matching_networks/Screen Shot 2016-08-07 at 10.08.44 PM.png",
+      "bytes": 305266,
+      "word_count": null,
+      "binary": true,
+      "sha256": "f87fddc1bdee16035448cf18bc0dee81c08949a9ad88f1659b0a19841556ef0d"
+    },
+    {
+      "path": "paper-notes/img/matching_networks/Screen Shot 2016-08-07 at 11.14.26 PM.png",
+      "bytes": 21024,
+      "word_count": null,
+      "binary": true,
+      "sha256": "8eb614fbaedf24b04ffc13dd486595fb949440eb6811d5a3827202b84deb4310"
+    },
+    {
+      "path": "paper-notes/img/matching_networks/Screen Shot 2016-08-07 at 11.20.29 PM.png",
+      "bytes": 37851,
+      "word_count": null,
+      "binary": true,
+      "sha256": "e40b8fc12fcfe63dc11225d83dfee4bc30d8c5a7062fd69d1131377f40bf6980"
+    },
+    {
+      "path": "paper-notes/img/matching_networks/Screen Shot 2016-08-07 at 11.57.10 PM.png",
+      "bytes": 181349,
+      "word_count": null,
+      "binary": true,
+      "sha256": "4f37c5e87a83e91d985056b919a347a8ded444db922a87c91639bd84f95a0af0"
+    },
+    {
+      "path": "paper-notes/img/matching_networks/Screen Shot 2016-08-08 at 10.21.45 AM.png",
+      "bytes": 231111,
+      "word_count": null,
+      "binary": true,
+      "sha256": "12d56a13a16b2f88a629b740395af53009fc7401e8ef15054beac30783521157"
+    },
+    {
+      "path": "paper-notes/img/matching_networks/Screen Shot 2016-08-08 at 10.27.46 AM.png",
+      "bytes": 181685,
+      "word_count": null,
+      "binary": true,
+      "sha256": "d6a7bb960632c5b38359eef59c56e1df1ba5e1ce58f35e63105de5d989c41e3d"
+    },
+    {
+      "path": "paper-notes/img/matching_networks/Screen Shot 2016-08-08 at 12.11.15 AM.png",
+      "bytes": 71608,
+      "word_count": null,
+      "binary": true,
+      "sha256": "d3ad80a6ddb62dd51c83eed125fd438f19ccf5affb60f69dc938b3edf4295cfc"
+    },
+    {
+      "path": "paper-notes/img/vin/Screen Shot 2016-08-13 at 3.26.04 PM.png",
+      "bytes": 23355,
+      "word_count": null,
+      "binary": true,
+      "sha256": "8fd930145d1298b17ecd7d0eeea97735ff9c84b5cd7b216c3a463a783250a38a"
+    },
+    {
+      "path": "paper-notes/img/vin/Screen Shot 2016-08-13 at 4.43.04 PM.png",
+      "bytes": 55113,
+      "word_count": null,
+      "binary": true,
+      "sha256": "5ce7862a6fc5da885e7b082fc2081dc81c9453f9e5289773e92cd05cbde2655d"
+    },
+    {
+      "path": "paper-notes/img/vin/Screen Shot 2016-08-13 at 4.58.42 PM.png",
+      "bytes": 178341,
+      "word_count": null,
+      "binary": true,
+      "sha256": "474d746d7e018103ceae5099585e2104ec8fdcccf8d52333503ee2675f9596b1"
+    },
+    {
+      "path": "paper-notes/img/vin/Screen Shot 2016-08-13 at 5.47.23 PM.png",
+      "bytes": 81847,
+      "word_count": null,
+      "binary": true,
+      "sha256": "db83024d0e529aa01b83c5e735e250e9e1c5c2ebe1f348504ad88946a52a89a1"
+    },
+    {
+      "path": "paper-notes/img/wikireading/Screen Shot 2016-08-07 at 1.53.11 PM.png",
+      "bytes": 226079,
+      "word_count": null,
+      "binary": true,
+      "sha256": "47db93e1b16635379faad6c423c167917b911e065b06d8c4c9f48b6c266e5f6a"
+    },
+    {
+      "path": "paper-notes/img/wikireading/Screen Shot 2016-08-07 at 2.37.48 PM.png",
+      "bytes": 34765,
+      "word_count": null,
+      "binary": true,
+      "sha256": "b6eaf267a1ee4dc9e09d1cb58b8e944771a64ba1ecabd4b9ad0f8fc89b62d7f2"
+    },
+    {
+      "path": "paper-notes/img/wikireading/Screen Shot 2016-08-07 at 2.38.24 PM.png",
+      "bytes": 42272,
+      "word_count": null,
+      "binary": true,
+      "sha256": "409158c45fa18dafd0350711319a02e1edfa0c2e8b56d5dd84d9b97dcce69598"
+    },
+    {
+      "path": "paper-notes/img/wikireading/Screen Shot 2016-08-07 at 3.18.05 PM.png",
+      "bytes": 60893,
+      "word_count": null,
+      "binary": true,
+      "sha256": "446ab93a12bf12190b5ec783cc6744aa3d745c7c7486e0c4c97462539b4737ad"
+    },
+    {
+      "path": "paper-notes/img/wikireading/Screen Shot 2016-08-07 at 4.07.18 PM.png",
+      "bytes": 428245,
+      "word_count": null,
+      "binary": true,
+      "sha256": "32fd4ca5623221f526a3892185010cef4c761c978bebfd82fc18326888a848f0"
+    },
+    {
+      "path": "paper-notes/img/wikireading/Screen Shot 2016-08-07 at 4.22.13 PM.png",
+      "bytes": 178891,
+      "word_count": null,
+      "binary": true,
+      "sha256": "057593122f4cd3b1fc67cb561d926de9fd51a890e2515d0c2b2be9ed60dcf87f"
+    },
+    {
+      "path": "paper-notes/matching_networks.md",
+      "bytes": 11081,
+      "word_count": 1760,
+      "binary": false,
+      "sha256": "8149f09be3517f15743c45097d9208d42aac18913390bb706f43ab26ddbe3f08"
+    },
+    {
+      "path": "paper-notes/vin.md",
+      "bytes": 9642,
+      "word_count": 1530,
+      "binary": false,
+      "sha256": "8b53a78cfbb71f8e443d401817f4edbc74ccf54152c0104a2463f3e6203cc743"
+    },
+    {
+      "path": "paper-notes/wikireading.md",
+      "bytes": 10073,
+      "word_count": 1550,
+      "binary": false,
+      "sha256": "180cdb2bd0455c45edf4242effbcf1f72cb2556cb6b17c08e25a3b5de5f47d4d"
+    }
+  ],
+  "failures": [
+    {
+      "target": "https://karpathy.github.io/",
+      "reason": "blocked by environment egress policy",
+      "error": "403 CONNECT (proxy refused to open tunnel) — pre-verified as blocked before this crawl; not retried. Content recovered instead by cloning the Jekyll source repo github.com/karpathy/karpathy.github.io."
+    },
+    {
+      "target": "https://karpathy.bearblog.dev/",
+      "reason": "blocked by environment egress policy",
+      "error": "curl: (56) CONNECT tunnel failed, response 403 (http_code 000)"
+    },
+    {
+      "target": "https://medium.com/@karpathy",
+      "reason": "blocked by environment egress policy",
+      "error": "curl: (56) CONNECT tunnel failed, response 403 (http_code 000)"
+    },
+    {
+      "target": "https://github.com/karpathy/blog",
+      "reason": "repository does not exist / not accessible",
+      "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+    },
+    {
+      "target": "https://github.com/karpathy/notes",
+      "reason": "repository does not exist / not accessible",
+      "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+    },
+    {
+      "target": "https://github.com/karpathy/writing",
+      "reason": "repository does not exist / not accessible",
+      "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+    },
+    {
+      "target": "https://github.com/karpathy/essays",
+      "reason": "repository does not exist / not accessible",
+      "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+    },
+    {
+      "target": "https://github.com/karpathy/random",
+      "reason": "repository does not exist / not accessible",
+      "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+    },
+    {
+      "target": "https://github.com/karpathy/karpathy-blog",
+      "reason": "repository does not exist / not accessible",
+      "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt)"
+    },
+    {
+      "target": "https://github.com/karpathy/karpathy.bearblog.dev",
+      "reason": "repository does not exist / not accessible",
+      "error": "git ls-remote: fatal: could not read Username for 'https://github.com': terminal prompts disabled (anonymous 404 → auth prompt). No GitHub-hosted mirror of the bearblog.dev posts was found."
+    }
+  ]
+}
