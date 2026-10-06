@@ -7,7 +7,7 @@ Chronology lives in `log.md`. Conventions live in `../CLAUDE.md`.
 
 | Page | What it is |
 | --- | --- |
-| [hot.md](hot.md) | **475 words.** The highest-density answer to "how does he think?". Read this before anything else. |
+| [hot.md](hot.md) | **Under 500 words** (475 by `wc -w`). The highest-density answer to "how does he think?". Read this before anything else. |
 
 ## Synthesis
 

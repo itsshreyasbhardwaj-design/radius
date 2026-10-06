@@ -9,8 +9,8 @@ code. They are not style preferences — they are the whole job.
 
 ## Before you start
 
-1. **Read `karpathy-brain/wiki/hot.md` first.** Always. It is 475 words and it
-   is the compressed form of everything below.
+1. **Read `karpathy-brain/wiki/hot.md` first.** Always. It is under 500 words
+   and it is the compressed form of everything below.
 2. **Read at most five wiki pages per task, including `hot.md`.** That is a hard
    cap. If you want a sixth, you are researching instead of building — stop and
    use what you have. Pick from: `rules.md`, `principles.md`, `methods.md`,
