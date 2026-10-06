@@ -1,0 +1,22 @@
+[
+  {
+    "target": "https://www.youtube.com/@AndrejKarpathy/videos",
+    "reason": "blocked by environment egress policy — yt-dlp could not enumerate the channel",
+    "error": "ERROR: [youtube:tab] @AndrejKarpathy/videos: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')). yt-dlp 2026.08.19. Full stderr in _crawl/ytdlp_channel.stderr.txt"
+  },
+  {
+    "target": "https://www.youtube.com/watch?v=kCc8FmEb1nY (yt-dlp --write-sub --write-auto-sub)",
+    "reason": "blocked by environment egress policy — yt-dlp could not fetch captions for a representative lecture",
+    "error": "ERROR: [youtube] kCc8FmEb1nY: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')). Full stderr in _crawl/ytdlp_subtitles.stderr.txt"
+  },
+  {
+    "target": "youtube_transcript_api.YouTubeTranscriptApi().fetch('kCc8FmEb1nY')",
+    "reason": "blocked by environment egress policy — youtube-transcript-api could not reach youtube.com",
+    "error": "ProxyError: HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /watch?v=kCc8FmEb1nY (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  {
+    "target": "www.youtube.com / youtube.com / m.youtube.com",
+    "reason": "blocked by environment egress policy at the CONNECT layer",
+    "error": "curl: (56) CONNECT tunnel failed, response 403 — all three hostnames"
+  }
+]

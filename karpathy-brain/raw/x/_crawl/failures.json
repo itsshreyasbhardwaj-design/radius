@@ -1,0 +1,22 @@
+[
+  {
+    "target": ".env file containing the TwitterAPI.io key",
+    "reason": "credential not present in this environment — no .env file exists anywhere on the machine",
+    "error": "`find / -name .env` returned no results. The repo .gitignore also excludes `.env*`, so it was never committed. No environment variable matching twitter/twtr/x_api is set either (0 matches). This is a cloud session working from a fresh clone, so a .env that exists on a local machine is not present here."
+  },
+  {
+    "target": "https://api.twitterapi.io/twitter/user/last_tweets?userName=karpathy",
+    "reason": "blocked by environment egress policy at the CONNECT layer",
+    "error": "curl: (56) CONNECT tunnel failed, response 403 — 'Establish HTTP proxy tunnel to api.twitterapi.io:443' refused by the policy-enforcing egress proxy"
+  },
+  {
+    "target": "https://twitterapi.io",
+    "reason": "blocked by environment egress policy at the CONNECT layer",
+    "error": "curl: (56) CONNECT tunnel failed, response 403"
+  },
+  {
+    "target": "https://x.com/karpathy",
+    "reason": "blocked by environment egress policy at the CONNECT layer",
+    "error": "curl: (56) CONNECT tunnel failed, response 403"
+  }
+]
