@@ -1,0 +1,541 @@
+[
+  {
+    "quote": "If you insist on using the technology without understanding how it works you are likely to fail.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "understanding",
+    "note": "Core anti-black-box principle."
+  },
+  {
+    "quote": "Therefore, your misconfigured neural net will throw exceptions only if you're lucky; Most of the time it will train but silently work a bit worse.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "debugging",
+    "note": "Neural net training fails silently, so verification must be deliberate."
+  },
+  {
+    "quote": "The qualities that in my experience correlate most strongly to success in deep learning are patience and attention to detail.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "debugging",
+    "note": "His stated predictor of success in deep learning work."
+  },
+  {
+    "quote": "In particular, it builds from simple to complex and at every step of the way we make concrete hypotheses about what will happen and then either validate them with an experiment or investigate until we find some issue.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "empiricism",
+    "note": "The incremental hypothesis-and-experiment loop at the heart of his recipe."
+  },
+  {
+    "quote": "What we try to prevent very hard is the introduction of a lot of \"unverified\" complexity at once, which is bound to introduce bugs/misconfigurations that will take forever to find (if ever).",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "simplicity",
+    "note": "Avoid unverified complexity; add one thing at a time."
+  },
+  {
+    "quote": "If writing your neural net code was like training one, you'd want to use a very small learning rate and guess and then evaluate the full test set after every iteration.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "empiricism",
+    "note": "Metaphor for how slowly and carefully to move when writing training code."
+  },
+  {
+    "quote": "The first step to training a neural net is to not touch any neural net code at all and instead begin by thoroughly inspecting your data.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "empiricism",
+    "note": "Become one with the data before writing the model."
+  },
+  {
+    "quote": "We are in pursuit of correctness and are very willing to give up time for staying sane.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "debugging",
+    "note": "Trades compute/time for trustworthy measurement."
+  },
+  {
+    "quote": "Overfit a single batch of only a few examples (e.g. as little as two).",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "debugging",
+    "note": "Canonical pipeline verification step."
+  },
+  {
+    "quote": "That is - you want to visualize *exactly* what goes into your network, decoding that raw tensor of data and labels into visualizations.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "debugging",
+    "note": "Visualize at the true source of truth, just before the model."
+  },
+  {
+    "quote": "I like to write a very specific function to what I'm doing right now, get that to work, and then generalize it later making sure that I get the same result.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "simplicity",
+    "note": "Specific-first, generalize-later coding method."
+  },
+  {
+    "quote": "I always advise people to simply find the most related paper and copy paste their simplest architecture that achieves good performance.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "research-taste",
+    "note": "\"Don't be a hero\" on architecture choice early on."
+  },
+  {
+    "quote": "I cannot simplify this any further.",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "simplicity",
+    "note": "The minimalism claim for microgpt: 200 lines, nothing left to remove."
+  },
+  {
+    "quote": "Everything else is just efficiency.",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "simplicity",
+    "note": "Separates algorithmic essence from engineering for speed."
+  },
+  {
+    "quote": "Think of each operation as a little lego block: it takes some inputs, produces an output (the forward pass), and it knows how its output would change with respect to each of its inputs (the local gradient).",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "teaching",
+    "note": "Teaching autograd through a concrete physical metaphor."
+  },
+  {
+    "quote": "This is the same algorithm that PyTorch's `loss.backward()` runs, just on scalars instead of tensors (arrays of scalars) - algorithmically identical, significantly smaller and simpler, but of course a lot less efficient.",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "build-from-scratch",
+    "note": "The from-scratch version is the real thing, minus efficiency."
+  },
+  {
+    "quote": "All of these are important engineering and research contributions but if you understand microgpt, you understand the algorithmic essence.",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "understanding",
+    "note": "Understanding the minimal core transfers to production systems."
+  },
+  {
+    "quote": "I think this might be one helpful way to step through the code base, where you add one component at a time.",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "teaching",
+    "note": "One-component-at-a-time pedagogy, mirroring his debugging rule."
+  },
+  {
+    "quote": "You're not just solving problems - that's merely the simple inner loop.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Research is mostly the outer loop of choosing problems."
+  },
+  {
+    "quote": "You spend most of your time on the outer loop, figuring out what problems are worth solving and what problems are ripe for solving.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Defines the outer-loop work of problem selection."
+  },
+  {
+    "quote": "In particular, I think I had a terrible taste coming in to the PhD.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Taste is acquired through practice, not innate."
+  },
+  {
+    "quote": "This is a fallacy - in my experience a 10x more important problem is at most 2-3x harder to achieve.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Sublinear scaling of hardness; be ambitious."
+  },
+  {
+    "quote": "It's because thinking 10x forces you out of the box, to confront the real limitations of an approach, to think from first principles, to change the strategy completely, to innovate.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Why ambition changes the method, not just the target."
+  },
+  {
+    "quote": "Incremental work is a paper that enhances something existing by making it more complex and gets 2% extra on some benchmark.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "His negative example of what not to work on."
+  },
+  {
+    "quote": "Think for yourself and from first principles.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "First-principles thinking as explicit advice."
+  },
+  {
+    "quote": "Do things others don't do but should.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Picking neglected high-value work."
+  },
+  {
+    "quote": "Step off the treadmill that has been put before you.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Rejecting proxy metrics and the standard academic game."
+  },
+  {
+    "quote": "Do good work, communicate it properly, people will notice and good things will happen.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "His closing summary of how research careers actually work."
+  },
+  {
+    "quote": "My personal experience with Neural Networks is that everything became much clearer when I started ignoring full-page, dense derivations of backpropagation equations and just started writing code.",
+    "file": "blog/karpathy.github.io/nntutorial.md",
+    "post_title": "Hacker's guide to Neural Networks",
+    "theme": "build-from-scratch",
+    "note": "Writing code, not reading derivations, is how he came to understand nets."
+  },
+  {
+    "quote": "My exposition will center around code and physical intuitions instead of mathematical derivations.",
+    "file": "blog/karpathy.github.io/nntutorial.md",
+    "post_title": "Hacker's guide to Neural Networks",
+    "theme": "teaching",
+    "note": "Teaching philosophy: code and intuition over math."
+  },
+  {
+    "quote": "Basically, I will strive to present the algorithms in a way that I wish I had come across when I was starting out.",
+    "file": "blog/karpathy.github.io/nntutorial.md",
+    "post_title": "Hacker's guide to Neural Networks",
+    "theme": "teaching",
+    "note": "Writes the explanation he wished existed."
+  },
+  {
+    "quote": "The derivative can be thought of as a force on each input as we pull on the output to become higher.",
+    "file": "blog/karpathy.github.io/nntutorial.md",
+    "post_title": "Hacker's guide to Neural Networks",
+    "theme": "teaching",
+    "note": "Physical intuition substituting for formal calculus."
+  },
+  {
+    "quote": "If this makes sense, you understand backpropagation.",
+    "file": "blog/karpathy.github.io/nntutorial.md",
+    "post_title": "Hacker's guide to Neural Networks",
+    "theme": "understanding",
+    "note": "Reduces backprop to one graspable idea."
+  },
+  {
+    "quote": "And in the spirit of \"what I cannot create I do not understand\", what better way to do this than implement it from scratch?",
+    "file": "blog/karpathy.github.io/_posts/2021-06-21-blockchain.markdown",
+    "post_title": "A from-scratch tour of Bitcoin in Python",
+    "theme": "build-from-scratch",
+    "note": "The Feynman maxim he uses to justify from-scratch reimplementation."
+  },
+  {
+    "quote": "We are going to create, digitally sign, and broadcast a Bitcoin transaction in pure Python, from scratch, and with zero dependencies.",
+    "file": "blog/karpathy.github.io/_posts/2021-06-21-blockchain.markdown",
+    "post_title": "A from-scratch tour of Bitcoin in Python",
+    "theme": "build-from-scratch",
+    "note": "Zero-dependency, pure-Python reimplementation as the learning vehicle."
+  },
+  {
+    "quote": "Okay the reason I wanted to implement this from scratch and paste it here is that I want you to note that again there is nothing too scary going on inside.",
+    "file": "blog/karpathy.github.io/_posts/2021-06-21-blockchain.markdown",
+    "post_title": "A from-scratch tour of Bitcoin in Python",
+    "theme": "understanding",
+    "note": "Demystification is the explicit purpose of building it yourself."
+  },
+  {
+    "quote": "I set out to re-implement t-SNE from scratch since doing so is the best way of learning something that I know of, and what better language to do this in than - Javascript! :)",
+    "file": "blog/karpathy.github.io/_posts/2014-07-02-visualizing-top-tweeps-with-t-sne-in-Javascript.markdown",
+    "post_title": "Visualizing Top Tweeps with t-SNE, in Javascript",
+    "theme": "build-from-scratch",
+    "note": "States reimplementation as his best known learning method."
+  },
+  {
+    "quote": "If training vanilla neural nets is optimization over functions, training recurrent nets is optimization over programs.",
+    "file": "blog/karpathy.github.io/_posts/2015-05-21-rnn-effectiveness.markdown",
+    "post_title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+    "theme": "understanding",
+    "note": "Conceptual reframing of what recurrent training does."
+  },
+  {
+    "quote": "Sometimes the ratio of how simple your model is to the quality of the results you get out of it blows past your expectations, and this was one of those times.",
+    "file": "blog/karpathy.github.io/_posts/2015-05-21-rnn-effectiveness.markdown",
+    "post_title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+    "theme": "simplicity",
+    "note": "Simple models can massively outperform expectations."
+  },
+  {
+    "quote": "It is only about 100 lines long and hopefully it gives a concise, concrete and useful summary of the above if you're better at reading code than text.",
+    "file": "blog/karpathy.github.io/_posts/2015-05-21-rnn-effectiveness.markdown",
+    "post_title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+    "theme": "simplicity",
+    "note": "Minimal line-counted reference implementation as explanation."
+  },
+  {
+    "quote": "We just trained the LSTM on raw data and it decided that this is a useful quantitity to keep track of.",
+    "file": "blog/karpathy.github.io/_posts/2015-05-21-rnn-effectiveness.markdown",
+    "post_title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+    "theme": "software2.0",
+    "note": "End-to-end training discovers representations nobody hardcoded."
+  },
+  {
+    "quote": "Second, by compiling one gives up interpretability and the ability to log/debug effectively.",
+    "file": "blog/karpathy.github.io/_posts/2015-05-21-rnn-effectiveness.markdown",
+    "post_title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+    "theme": "debugging",
+    "note": "Prefers tooling that keeps the system inspectable."
+  },
+  {
+    "quote": "Whenever there is a disconnect between how magical something seems and how simple it is under the hood I get all antsy and really want to write a blog post.",
+    "file": "blog/karpathy.github.io/_posts/2016-05-31-rl.markdown",
+    "post_title": "Deep Reinforcement Learning: Pong from Pixels",
+    "theme": "teaching",
+    "note": "His stated trigger for writing explanations: demystifying magic."
+  },
+  {
+    "quote": "the whole thing is 130 lines of Python only using numpy as a dependency",
+    "file": "blog/karpathy.github.io/_posts/2016-05-31-rl.markdown",
+    "post_title": "Deep Reinforcement Learning: Pong from Pixels",
+    "theme": "simplicity",
+    "note": "Line-counted minimal implementation as the deliverable."
+  },
+  {
+    "quote": "One should always try a BB gun before reaching for the Bazooka.",
+    "file": "blog/karpathy.github.io/_posts/2016-05-31-rl.markdown",
+    "post_title": "Deep Reinforcement Learning: Pong from Pixels",
+    "theme": "simplicity",
+    "note": "Try the simplest baseline first."
+  },
+  {
+    "quote": "They are not automatic: You need a lot of samples, it trains forever, it is difficult to debug when it doesn't work.",
+    "file": "blog/karpathy.github.io/_posts/2016-05-31-rl.markdown",
+    "post_title": "Deep Reinforcement Learning: Pong from Pixels",
+    "theme": "debugging",
+    "note": "Honest accounting of how fragile these methods are in practice."
+  },
+  {
+    "quote": "The truth is that getting these models to work can be tricky, requires care and expertise, and in many cases could also be an overkill, where simpler methods could get you 90%+ of the way there.",
+    "file": "blog/karpathy.github.io/_posts/2016-05-31-rl.markdown",
+    "post_title": "Deep Reinforcement Learning: Pong from Pixels",
+    "theme": "simplicity",
+    "note": "Walks back the impression that his models are magic."
+  },
+  {
+    "quote": "So I set out to reproduce the paper 1) for fun, but 2) to use the exercise as a case study on the nature of progress in deep learning.",
+    "file": "blog/karpathy.github.io/_posts/2022-03-14-lecun1989.markdown",
+    "post_title": "Deep Neural Nets: 33 years ago and 33 years from now",
+    "theme": "build-from-scratch",
+    "note": "Reproduction as a deliberate research exercise."
+  },
+  {
+    "quote": "First of all, not much has changed in 33 years on the macro level.",
+    "file": "blog/karpathy.github.io/_posts/2022-03-14-lecun1989.markdown",
+    "post_title": "Deep Neural Nets: 33 years ago and 33 years from now",
+    "theme": "understanding",
+    "note": "The core recipe is stable; scale is what changed."
+  },
+  {
+    "quote": "I verified that just swapping tanh -> relu in the original network did not give substantial gains, so most of the improvement here is coming from the addition of dropout.",
+    "file": "blog/karpathy.github.io/_posts/2022-03-14-lecun1989.markdown",
+    "post_title": "Deep Neural Nets: 33 years ago and 33 years from now",
+    "theme": "debugging",
+    "note": "Ablates each change to attribute the gain correctly."
+  },
+  {
+    "quote": "Today's models are not optimally formulated, and just changing some of the details of the model, loss function, augmentation or the optimizer we can about halve the error.",
+    "file": "blog/karpathy.github.io/_posts/2022-03-14-lecun1989.markdown",
+    "post_title": "Deep Neural Nets: 33 years ago and 33 years from now",
+    "theme": "empiricism",
+    "note": "Extrapolated lesson: details still leave large gains on the table."
+  },
+  {
+    "quote": "I challenge you to think explicitly of all the pieces of knowledge that have to fall in place for it to make sense.",
+    "file": "blog/karpathy.github.io/_posts/2012-10-22-state-of-computer-vision.markdown",
+    "post_title": "The state of Computer Vision and AI: we are really, really far away.",
+    "theme": "understanding",
+    "note": "Makes the hidden complexity of a task explicit before judging progress."
+  },
+  {
+    "quote": "deriving the entire shape and size of the icerberg from prior knowledge is the most difficult task ahead of us.",
+    "file": "blog/karpathy.github.io/_posts/2012-10-22-state-of-computer-vision.markdown",
+    "post_title": "The state of Computer Vision and AI: we are really, really far away.",
+    "theme": "understanding",
+    "note": "Frames the real difficulty of vision as prior knowledge, not pixels."
+  },
+  {
+    "quote": "Over the weekend I wanted to see what kind of classification accuracy a human would achieve on this dataset.",
+    "file": "blog/karpathy.github.io/_posts/2011-04-27-manually-classifying-cifar10.markdown",
+    "post_title": "Lessons learned from manually classifying CIFAR-10",
+    "theme": "empiricism",
+    "note": "Measures the human baseline himself rather than guessing."
+  },
+  {
+    "quote": "I have trouble exactly articulating what I learned, but overall I feel like I gained more intuition for image classification tasks and more appreciation for the difficulty of the problem at hand.",
+    "file": "blog/karpathy.github.io/_posts/2011-04-27-manually-classifying-cifar10.markdown",
+    "post_title": "Lessons learned from manually classifying CIFAR-10",
+    "theme": "understanding",
+    "note": "Hands-on exercise yields intuition that's hard to get otherwise."
+  },
+  {
+    "quote": "In the end I realized that to get anywhere competitively close to GoogLeNet, it was most efficient if I sat down and went through the painfully long training process and the subsequent careful annotation process myself.",
+    "file": "blog/karpathy.github.io/_posts/2014-09-02-what-i-learned-from-competing-against-a-convnet-on-imagenet.markdown",
+    "post_title": "What I learned from competing against a ConvNet on ImageNet",
+    "theme": "empiricism",
+    "note": "Does the tedious measurement work himself to get a trustworthy number."
+  },
+  {
+    "quote": "Lastly, I found the experience to be quite educational: After seeing so many images, issues, and ConvNet predictions you start to develop a really good model of the failure modes.",
+    "file": "blog/karpathy.github.io/_posts/2014-09-02-what-i-learned-from-competing-against-a-convnet-on-imagenet.markdown",
+    "post_title": "What I learned from competing against a ConvNet on ImageNet",
+    "theme": "debugging",
+    "note": "Manual inspection builds a model of failure modes."
+  },
+  {
+    "quote": "Human accuracy is not a point. It lives on a tradeoff curve.",
+    "file": "blog/karpathy.github.io/_posts/2014-09-02-what-i-learned-from-competing-against-a-convnet-on-imagenet.markdown",
+    "post_title": "What I learned from competing against a ConvNet on ImageNet",
+    "theme": "debugging",
+    "note": "Being suspicious of a single headline number."
+  },
+  {
+    "quote": "I did not expect such an astronomical leap and I think neither did most of the community.",
+    "file": "blog/karpathy.github.io/_posts/2014-07-03-feature-learning-escapades.markdown",
+    "post_title": "Feature Learning Escapades",
+    "theme": "other",
+    "note": "Candid admission of a wrong prediction about AlexNet."
+  },
+  {
+    "quote": "I was happy that I found a very simple, efficient and surprisingly effective way of computing objectness over 3D meshes, but it wasn't what I set out to do.",
+    "file": "blog/karpathy.github.io/_posts/2014-07-03-feature-learning-escapades.markdown",
+    "post_title": "Feature Learning Escapades",
+    "theme": "research-taste",
+    "note": "Judging work by whether it addresses the problem that matters."
+  },
+  {
+    "quote": "The strengths, weaknesses and types of data practically available to humans and computers are fundamentally misaligned.",
+    "file": "blog/karpathy.github.io/_posts/2014-07-03-feature-learning-escapades.markdown",
+    "post_title": "Feature Learning Escapades",
+    "theme": "research-taste",
+    "note": "Warns against naive biological inspiration."
+  },
+  {
+    "quote": "In some sense, it is much more accurate to speak about *fooling subspaces* rather than *fooling images*.",
+    "file": "blog/karpathy.github.io/_posts/2015-03-30-breaking-convnets.markdown",
+    "post_title": "Breaking Linear Classifiers on ImageNet",
+    "theme": "understanding",
+    "note": "Reframes an empirical finding into a sharper mental model."
+  },
+  {
+    "quote": "It seems that to fix this problem we need to change our objectives, our forward functional forms, or even the way we optimize our models.",
+    "file": "blog/karpathy.github.io/_posts/2015-03-30-breaking-convnets.markdown",
+    "post_title": "Breaking Linear Classifiers on ImageNet",
+    "theme": "other",
+    "note": "Honest statement that no good fix is known."
+  },
+  {
+    "quote": "I prefer my answers based on data, not confirmation-bias-susceptible personal anecdotes",
+    "file": "blog/karpathy.github.io/_posts/2014-08-03-quantifying-productivity.markdown",
+    "post_title": "Quantifying Productivity",
+    "theme": "empiricism",
+    "note": "Instrument yourself and measure rather than trusting anecdote."
+  },
+  {
+    "quote": "The entire code base consists of like 7 files.",
+    "file": "blog/karpathy.github.io/_posts/2014-07-01-switching-to-jekyll.markdown",
+    "post_title": "Switching Blog from Wordpress to Jekyll",
+    "theme": "simplicity",
+    "note": "Counts files/lines as a measure of hackability."
+  },
+  {
+    "quote": "Jekyll strikes the balance: It's packed with just the right amount of features.",
+    "file": "blog/karpathy.github.io/_posts/2014-07-01-switching-to-jekyll.markdown",
+    "post_title": "Switching Blog from Wordpress to Jekyll",
+    "theme": "simplicity",
+    "note": "Minimalism as the right amount, not the least amount."
+  },
+  {
+    "quote": "I wanted to share a few examples of a powerful skill that I've been gradually picking up over the last year.",
+    "file": "blog/karpathy.github.io/_posts/2013-11-23-chrome-extension-programming.markdown",
+    "post_title": "Chrome Extension Programming: Illustrating a Basic Survival Skill with a Twitter Case Study",
+    "theme": "build-from-scratch",
+    "note": "Framing small custom tooling as a survival skill."
+  },
+  {
+    "quote": "A normal person would request features and wait, but with the dark arts of extension hacking we can do much better.",
+    "file": "blog/karpathy.github.io/_posts/2013-11-23-chrome-extension-programming.markdown",
+    "post_title": "Chrome Extension Programming: Illustrating a Basic Survival Skill with a Twitter Case Study",
+    "theme": "build-from-scratch",
+    "note": "Build the tool yourself instead of waiting for someone else."
+  },
+  {
+    "quote": "Basically, ConvNets are a very powerful hammer, and Computer Vision problems are very nails.",
+    "file": "blog/karpathy.github.io/_posts/2015-10-25-selfie.markdown",
+    "post_title": "What a Deep Neural Network thinks about your #selfie",
+    "theme": "other",
+    "note": "Compressed statement of why convnets took over vision."
+  },
+  {
+    "quote": "An additional way to see that BIA is making stuff up is that it shows me losing lean body mass over time.",
+    "file": "blog/karpathy.github.io/_posts/2020-06-11-biohacking-lite.markdown",
+    "post_title": "Biohacking Lite",
+    "theme": "debugging",
+    "note": "Cross-checks an instrument against an independent observation and distrusts it."
+  },
+  {
+    "quote": "It's been super fun to self-study these topics (which I skipped in high school), and I hope this post was an interesting intro to some of it.",
+    "file": "blog/karpathy.github.io/_posts/2020-06-11-biohacking-lite.markdown",
+    "post_title": "Biohacking Lite",
+    "theme": "teaching",
+    "note": "Self-study of a new field, then writing the intro he wanted."
+  },
+  {
+    "quote": "It hence falls into a category of fun papers that take explicit algorithms, make them differentiable, embed them in a larger neural net, and train everything end-to-end.",
+    "file": "blog/paper-notes/vin.md",
+    "post_title": "Paper notes: Value Iteration Networks",
+    "theme": "software2.0",
+    "note": "Identifies a research pattern: make an algorithm differentiable and train it."
+  },
+  {
+    "quote": "Unfortunately, I'm not sure why the authors preferred breadth of experiments and sacrificed depth of experiments.",
+    "file": "blog/paper-notes/vin.md",
+    "post_title": "Paper notes: Value Iteration Networks",
+    "theme": "debugging",
+    "note": "Prefers deep ablations over broad but shallow results."
+  },
+  {
+    "quote": "The original image is claimed to be so resized from original 28x28 to 1x1x64, which doesn't make sense because factor of 2 downsampling 4 times is reduction of 16, and 28/16 is a non-integer >1.",
+    "file": "blog/paper-notes/matching_networks.md",
+    "post_title": "Paper notes: Matching Networks for One Shot Learning",
+    "theme": "debugging",
+    "note": "Checks the arithmetic of a paper's stated architecture."
+  },
+  {
+    "quote": "I can't find the MANN numbers of 82.8% and 94.9% in their paper [21]; not clear where they come from.",
+    "file": "blog/paper-notes/matching_networks.md",
+    "post_title": "Paper notes: Matching Networks for One Shot Learning",
+    "theme": "debugging",
+    "note": "Traces reported baseline numbers back to their source."
+  },
+  {
+    "quote": "Lets push fully end-to-end character rnn models further.",
+    "file": "blog/paper-notes/wikireading.md",
+    "post_title": "Paper notes: WikiReading",
+    "theme": "software2.0",
+    "note": "Takeaway: push end-to-end learned systems further."
+  },
+  {
+    "quote": "Quite surprised to see char seq2seq do 0.699 vs. placeholder seq2seq at 0.718",
+    "file": "blog/paper-notes/wikireading.md",
+    "post_title": "Paper notes: WikiReading",
+    "theme": "empiricism",
+    "note": "Notes a result that updates his expectations."
+  }
+]

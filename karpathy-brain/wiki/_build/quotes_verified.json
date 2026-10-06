@@ -1,0 +1,1442 @@
+[
+  {
+    "quote": "If you insist on using the technology without understanding how it works you are likely to fail.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "understanding",
+    "note": "Core anti-black-box principle.",
+    "line": 32,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Therefore, your misconfigured neural net will throw exceptions only if you're lucky; Most of the time it will train but silently work a bit worse.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "debugging",
+    "note": "Neural net training fails silently, so verification must be deliberate.",
+    "line": 38,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "The qualities that in my experience correlate most strongly to success in deep learning are patience and attention to detail.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "debugging",
+    "note": "His stated predictor of success in deep learning work.",
+    "line": 40,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "In particular, it builds from simple to complex and at every step of the way we make concrete hypotheses about what will happen and then either validate them with an experiment or investigate until we find some issue.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "empiricism",
+    "note": "The incremental hypothesis-and-experiment loop at the heart of his recipe.",
+    "line": 44,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "What we try to prevent very hard is the introduction of a lot of \"unverified\" complexity at once, which is bound to introduce bugs/misconfigurations that will take forever to find (if ever).",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "simplicity",
+    "note": "Avoid unverified complexity; add one thing at a time.",
+    "line": 44,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "If writing your neural net code was like training one, you'd want to use a very small learning rate and guess and then evaluate the full test set after every iteration.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "empiricism",
+    "note": "Metaphor for how slowly and carefully to move when writing training code.",
+    "line": 44,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "The first step to training a neural net is to not touch any neural net code at all and instead begin by thoroughly inspecting your data.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "empiricism",
+    "note": "Become one with the data before writing the model.",
+    "line": 48,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "We are in pursuit of correctness and are very willing to give up time for staying sane.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "debugging",
+    "note": "Trades compute/time for trustworthy measurement.",
+    "line": 62,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Overfit a single batch of only a few examples (e.g. as little as two).",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "debugging",
+    "note": "Canonical pipeline verification step.",
+    "line": 67,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "That is - you want to visualize *exactly* what goes into your network, decoding that raw tensor of data and labels into visualizations.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "debugging",
+    "note": "Visualize at the true source of truth, just before the model.",
+    "line": 69,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I like to write a very specific function to what I'm doing right now, get that to work, and then generalize it later making sure that I get the same result.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "simplicity",
+    "note": "Specific-first, generalize-later coding method.",
+    "line": 72,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I always advise people to simply find the most related paper and copy paste their simplest architecture that achieves good performance.",
+    "file": "blog/karpathy.github.io/_posts/2019-04-25-recipe.markdown",
+    "post_title": "A Recipe for Training Neural Networks",
+    "theme": "research-taste",
+    "note": "\"Don't be a hero\" on architecture choice early on.",
+    "line": 83,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I cannot simplify this any further.",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "simplicity",
+    "note": "The minimalism claim for microgpt: 200 lines, nothing left to remove.",
+    "line": 21,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Everything else is just efficiency.",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "simplicity",
+    "note": "Separates algorithmic essence from engineering for speed.",
+    "line": 21,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Think of each operation as a little lego block: it takes some inputs, produces an output (the forward pass), and it knows how its output would change with respect to each of its inputs (the local gradient).",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "teaching",
+    "note": "Teaching autograd through a concrete physical metaphor.",
+    "line": 158,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "This is the same algorithm that PyTorch's `loss.backward()` runs, just on scalars instead of tensors (arrays of scalars) - algorithmically identical, significantly smaller and simpler, but of course a lot less efficient.",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "build-from-scratch",
+    "note": "The from-scratch version is the real thing, minus efficiency.",
+    "line": 208,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "All of these are important engineering and research contributions but if you understand microgpt, you understand the algorithmic essence.",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "understanding",
+    "note": "Understanding the minimal core transfers to production systems.",
+    "line": 500,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I think this might be one helpful way to step through the code base, where you add one component at a time.",
+    "file": "blog/karpathy.github.io/_posts/2026-02-12-microgpt.markdown",
+    "post_title": "microgpt",
+    "theme": "teaching",
+    "note": "One-component-at-a-time pedagogy, mirroring his debugging rule.",
+    "line": 478,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "You're not just solving problems - that's merely the simple inner loop.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Research is mostly the outer loop of choosing problems.",
+    "line": 84,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "You spend most of your time on the outer loop, figuring out what problems are worth solving and what problems are ripe for solving.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Defines the outer-loop work of problem selection.",
+    "line": 84,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "In particular, I think I had a terrible taste coming in to the PhD.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Taste is acquired through practice, not innate.",
+    "line": 88,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "This is a fallacy - in my experience a 10x more important problem is at most 2-3x harder to achieve.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Sublinear scaling of hardness; be ambitious.",
+    "line": 98,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "It's because thinking 10x forces you out of the box, to confront the real limitations of an approach, to think from first principles, to change the strategy completely, to innovate.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Why ambition changes the method, not just the target.",
+    "line": 98,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Incremental work is a paper that enhances something existing by making it more complex and gets 2% extra on some benchmark.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "His negative example of what not to work on.",
+    "line": 108,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Think for yourself and from first principles.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "First-principles thinking as explicit advice.",
+    "line": 114,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Do things others don't do but should.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Picking neglected high-value work.",
+    "line": 114,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Step off the treadmill that has been put before you.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "Rejecting proxy metrics and the standard academic game.",
+    "line": 114,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Do good work, communicate it properly, people will notice and good things will happen.",
+    "file": "blog/karpathy.github.io/_posts/2016-09-07-phd.markdown",
+    "post_title": "A Survival Guide to a PhD",
+    "theme": "research-taste",
+    "note": "His closing summary of how research careers actually work.",
+    "line": 206,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "My personal experience with Neural Networks is that everything became much clearer when I started ignoring full-page, dense derivations of backpropagation equations and just started writing code.",
+    "file": "blog/karpathy.github.io/nntutorial.md",
+    "post_title": "Hacker's guide to Neural Networks",
+    "theme": "build-from-scratch",
+    "note": "Writing code, not reading derivations, is how he came to understand nets.",
+    "line": 14,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "My exposition will center around code and physical intuitions instead of mathematical derivations.",
+    "file": "blog/karpathy.github.io/nntutorial.md",
+    "post_title": "Hacker's guide to Neural Networks",
+    "theme": "teaching",
+    "note": "Teaching philosophy: code and intuition over math.",
+    "line": 14,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Basically, I will strive to present the algorithms in a way that I wish I had come across when I was starting out.",
+    "file": "blog/karpathy.github.io/nntutorial.md",
+    "post_title": "Hacker's guide to Neural Networks",
+    "theme": "teaching",
+    "note": "Writes the explanation he wished existed.",
+    "line": 14,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "The derivative can be thought of as a force on each input as we pull on the output to become higher.",
+    "file": "blog/karpathy.github.io/nntutorial.md",
+    "post_title": "Hacker's guide to Neural Networks",
+    "theme": "teaching",
+    "note": "Physical intuition substituting for formal calculus.",
+    "line": 104,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "If this makes sense, you understand backpropagation.",
+    "file": "blog/karpathy.github.io/nntutorial.md",
+    "post_title": "Hacker's guide to Neural Networks",
+    "theme": "understanding",
+    "note": "Reduces backprop to one graspable idea.",
+    "line": 327,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "And in the spirit of \"what I cannot create I do not understand\", what better way to do this than implement it from scratch?",
+    "file": "blog/karpathy.github.io/_posts/2021-06-21-blockchain.markdown",
+    "post_title": "A from-scratch tour of Bitcoin in Python",
+    "theme": "build-from-scratch",
+    "note": "The Feynman maxim he uses to justify from-scratch reimplementation.",
+    "line": 34,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "We are going to create, digitally sign, and broadcast a Bitcoin transaction in pure Python, from scratch, and with zero dependencies.",
+    "file": "blog/karpathy.github.io/_posts/2021-06-21-blockchain.markdown",
+    "post_title": "A from-scratch tour of Bitcoin in Python",
+    "theme": "build-from-scratch",
+    "note": "Zero-dependency, pure-Python reimplementation as the learning vehicle.",
+    "line": 36,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Okay the reason I wanted to implement this from scratch and paste it here is that I want you to note that again there is nothing too scary going on inside.",
+    "file": "blog/karpathy.github.io/_posts/2021-06-21-blockchain.markdown",
+    "post_title": "A from-scratch tour of Bitcoin in Python",
+    "theme": "understanding",
+    "note": "Demystification is the explicit purpose of building it yourself.",
+    "line": 444,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I set out to re-implement t-SNE from scratch since doing so is the best way of learning something that I know of, and what better language to do this in than - Javascript! :)",
+    "file": "blog/karpathy.github.io/_posts/2014-07-02-visualizing-top-tweeps-with-t-sne-in-Javascript.markdown",
+    "post_title": "Visualizing Top Tweeps with t-SNE, in Javascript",
+    "theme": "build-from-scratch",
+    "note": "States reimplementation as his best known learning method.",
+    "line": 13,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "If training vanilla neural nets is optimization over functions, training recurrent nets is optimization over programs.",
+    "file": "blog/karpathy.github.io/_posts/2015-05-21-rnn-effectiveness.markdown",
+    "post_title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+    "theme": "understanding",
+    "note": "Conceptual reframing of what recurrent training does.",
+    "line": 27,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Sometimes the ratio of how simple your model is to the quality of the results you get out of it blows past your expectations, and this was one of those times.",
+    "file": "blog/karpathy.github.io/_posts/2015-05-21-rnn-effectiveness.markdown",
+    "post_title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+    "theme": "simplicity",
+    "note": "Simple models can massively outperform expectations.",
+    "line": 10,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "It is only about 100 lines long and hopefully it gives a concise, concrete and useful summary of the above if you're better at reading code than text.",
+    "file": "blog/karpathy.github.io/_posts/2015-05-21-rnn-effectiveness.markdown",
+    "post_title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+    "theme": "simplicity",
+    "note": "Minimal line-counted reference implementation as explanation.",
+    "line": 98,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "We just trained the LSTM on raw data and it decided that this is a useful quantitity to keep track of.",
+    "file": "blog/karpathy.github.io/_posts/2015-05-21-rnn-effectiveness.markdown",
+    "post_title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+    "theme": "software2.0",
+    "note": "End-to-end training discovers representations nobody hardcoded.",
+    "line": 649,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Second, by compiling one gives up interpretability and the ability to log/debug effectively.",
+    "file": "blog/karpathy.github.io/_posts/2015-05-21-rnn-effectiveness.markdown",
+    "post_title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+    "theme": "debugging",
+    "note": "Prefers tooling that keeps the system inspectable.",
+    "line": 660,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Whenever there is a disconnect between how magical something seems and how simple it is under the hood I get all antsy and really want to write a blog post.",
+    "file": "blog/karpathy.github.io/_posts/2016-05-31-rl.markdown",
+    "post_title": "Deep Reinforcement Learning: Pong from Pixels",
+    "theme": "teaching",
+    "note": "His stated trigger for writing explanations: demystifying magic.",
+    "line": 35,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "the whole thing is 130 lines of Python only using numpy as a dependency",
+    "file": "blog/karpathy.github.io/_posts/2016-05-31-rl.markdown",
+    "post_title": "Deep Reinforcement Learning: Pong from Pixels",
+    "theme": "simplicity",
+    "note": "Line-counted minimal implementation as the deliverable.",
+    "line": 35,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "One should always try a BB gun before reaching for the Bazooka.",
+    "file": "blog/karpathy.github.io/_posts/2016-05-31-rl.markdown",
+    "post_title": "Deep Reinforcement Learning: Pong from Pixels",
+    "theme": "simplicity",
+    "note": "Try the simplest baseline first.",
+    "line": 198,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "They are not automatic: You need a lot of samples, it trains forever, it is difficult to debug when it doesn't work.",
+    "file": "blog/karpathy.github.io/_posts/2016-05-31-rl.markdown",
+    "post_title": "Deep Reinforcement Learning: Pong from Pixels",
+    "theme": "debugging",
+    "note": "Honest accounting of how fragile these methods are in practice.",
+    "line": 198,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "The truth is that getting these models to work can be tricky, requires care and expertise, and in many cases could also be an overkill, where simpler methods could get you 90%+ of the way there.",
+    "file": "blog/karpathy.github.io/_posts/2016-05-31-rl.markdown",
+    "post_title": "Deep Reinforcement Learning: Pong from Pixels",
+    "theme": "simplicity",
+    "note": "Walks back the impression that his models are magic.",
+    "line": 198,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "So I set out to reproduce the paper 1) for fun, but 2) to use the exercise as a case study on the nature of progress in deep learning.",
+    "file": "blog/karpathy.github.io/_posts/2022-03-14-lecun1989.markdown",
+    "post_title": "Deep Neural Nets: 33 years ago and 33 years from now",
+    "theme": "build-from-scratch",
+    "note": "Reproduction as a deliberate research exercise.",
+    "line": 22,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "First of all, not much has changed in 33 years on the macro level.",
+    "file": "blog/karpathy.github.io/_posts/2022-03-14-lecun1989.markdown",
+    "post_title": "Deep Neural Nets: 33 years ago and 33 years from now",
+    "theme": "understanding",
+    "note": "The core recipe is stable; scale is what changed.",
+    "line": 113,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I verified that just swapping tanh -> relu in the original network did not give substantial gains, so most of the improvement here is coming from the addition of dropout.",
+    "file": "blog/karpathy.github.io/_posts/2022-03-14-lecun1989.markdown",
+    "post_title": "Deep Neural Nets: 33 years ago and 33 years from now",
+    "theme": "debugging",
+    "note": "Ablates each change to attribute the gain correctly.",
+    "line": 81,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Today's models are not optimally formulated, and just changing some of the details of the model, loss function, augmentation or the optimizer we can about halve the error.",
+    "file": "blog/karpathy.github.io/_posts/2022-03-14-lecun1989.markdown",
+    "post_title": "Deep Neural Nets: 33 years ago and 33 years from now",
+    "theme": "empiricism",
+    "note": "Extrapolated lesson: details still leave large gains on the table.",
+    "line": 126,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I challenge you to think explicitly of all the pieces of knowledge that have to fall in place for it to make sense.",
+    "file": "blog/karpathy.github.io/_posts/2012-10-22-state-of-computer-vision.markdown",
+    "post_title": "The state of Computer Vision and AI: we are really, really far away.",
+    "theme": "understanding",
+    "note": "Makes the hidden complexity of a task explicit before judging progress.",
+    "line": 12,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "deriving the entire shape and size of the icerberg from prior knowledge is the most difficult task ahead of us.",
+    "file": "blog/karpathy.github.io/_posts/2012-10-22-state-of-computer-vision.markdown",
+    "post_title": "The state of Computer Vision and AI: we are really, really far away.",
+    "theme": "understanding",
+    "note": "Frames the real difficulty of vision as prior knowledge, not pixels.",
+    "line": 27,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Over the weekend I wanted to see what kind of classification accuracy a human would achieve on this dataset.",
+    "file": "blog/karpathy.github.io/_posts/2011-04-27-manually-classifying-cifar10.markdown",
+    "post_title": "Lessons learned from manually classifying CIFAR-10",
+    "theme": "empiricism",
+    "note": "Measures the human baseline himself rather than guessing.",
+    "line": 19,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I have trouble exactly articulating what I learned, but overall I feel like I gained more intuition for image classification tasks and more appreciation for the difficulty of the problem at hand.",
+    "file": "blog/karpathy.github.io/_posts/2011-04-27-manually-classifying-cifar10.markdown",
+    "post_title": "Lessons learned from manually classifying CIFAR-10",
+    "theme": "understanding",
+    "note": "Hands-on exercise yields intuition that's hard to get otherwise.",
+    "line": 37,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "In the end I realized that to get anywhere competitively close to GoogLeNet, it was most efficient if I sat down and went through the painfully long training process and the subsequent careful annotation process myself.",
+    "file": "blog/karpathy.github.io/_posts/2014-09-02-what-i-learned-from-competing-against-a-convnet-on-imagenet.markdown",
+    "post_title": "What I learned from competing against a ConvNet on ImageNet",
+    "theme": "empiricism",
+    "note": "Does the tedious measurement work himself to get a trustworthy number.",
+    "line": 57,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Lastly, I found the experience to be quite educational: After seeing so many images, issues, and ConvNet predictions you start to develop a really good model of the failure modes.",
+    "file": "blog/karpathy.github.io/_posts/2014-09-02-what-i-learned-from-competing-against-a-convnet-on-imagenet.markdown",
+    "post_title": "What I learned from competing against a ConvNet on ImageNet",
+    "theme": "debugging",
+    "note": "Manual inspection builds a model of failure modes.",
+    "line": 61,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Human accuracy is not a point. It lives on a tradeoff curve.",
+    "file": "blog/karpathy.github.io/_posts/2014-09-02-what-i-learned-from-competing-against-a-convnet-on-imagenet.markdown",
+    "post_title": "What I learned from competing against a ConvNet on ImageNet",
+    "theme": "debugging",
+    "note": "Being suspicious of a single headline number.",
+    "line": 132,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I did not expect such an astronomical leap and I think neither did most of the community.",
+    "file": "blog/karpathy.github.io/_posts/2014-07-03-feature-learning-escapades.markdown",
+    "post_title": "Feature Learning Escapades",
+    "theme": "other",
+    "note": "Candid admission of a wrong prediction about AlexNet.",
+    "line": 74,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I was happy that I found a very simple, efficient and surprisingly effective way of computing objectness over 3D meshes, but it wasn't what I set out to do.",
+    "file": "blog/karpathy.github.io/_posts/2014-07-03-feature-learning-escapades.markdown",
+    "post_title": "Feature Learning Escapades",
+    "theme": "research-taste",
+    "note": "Judging work by whether it addresses the problem that matters.",
+    "line": 60,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "The strengths, weaknesses and types of data practically available to humans and computers are fundamentally misaligned.",
+    "file": "blog/karpathy.github.io/_posts/2014-07-03-feature-learning-escapades.markdown",
+    "post_title": "Feature Learning Escapades",
+    "theme": "research-taste",
+    "note": "Warns against naive biological inspiration.",
+    "line": 121,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "In some sense, it is much more accurate to speak about *fooling subspaces* rather than *fooling images*.",
+    "file": "blog/karpathy.github.io/_posts/2015-03-30-breaking-convnets.markdown",
+    "post_title": "Breaking Linear Classifiers on ImageNet",
+    "theme": "understanding",
+    "note": "Reframes an empirical finding into a sharper mental model.",
+    "line": 40,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "It seems that to fix this problem we need to change our objectives, our forward functional forms, or even the way we optimize our models.",
+    "file": "blog/karpathy.github.io/_posts/2015-03-30-breaking-convnets.markdown",
+    "post_title": "Breaking Linear Classifiers on ImageNet",
+    "theme": "other",
+    "note": "Honest statement that no good fix is known.",
+    "line": 162,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I prefer my answers based on data, not confirmation-bias-susceptible personal anecdotes",
+    "file": "blog/karpathy.github.io/_posts/2014-08-03-quantifying-productivity.markdown",
+    "post_title": "Quantifying Productivity",
+    "theme": "empiricism",
+    "note": "Instrument yourself and measure rather than trusting anecdote.",
+    "line": 11,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "The entire code base consists of like 7 files.",
+    "file": "blog/karpathy.github.io/_posts/2014-07-01-switching-to-jekyll.markdown",
+    "post_title": "Switching Blog from Wordpress to Jekyll",
+    "theme": "simplicity",
+    "note": "Counts files/lines as a measure of hackability.",
+    "line": 32,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Jekyll strikes the balance: It's packed with just the right amount of features.",
+    "file": "blog/karpathy.github.io/_posts/2014-07-01-switching-to-jekyll.markdown",
+    "post_title": "Switching Blog from Wordpress to Jekyll",
+    "theme": "simplicity",
+    "note": "Minimalism as the right amount, not the least amount.",
+    "line": 38,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I wanted to share a few examples of a powerful skill that I've been gradually picking up over the last year.",
+    "file": "blog/karpathy.github.io/_posts/2013-11-23-chrome-extension-programming.markdown",
+    "post_title": "Chrome Extension Programming: Illustrating a Basic Survival Skill with a Twitter Case Study",
+    "theme": "build-from-scratch",
+    "note": "Framing small custom tooling as a survival skill.",
+    "line": 10,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "A normal person would request features and wait, but with the dark arts of extension hacking we can do much better.",
+    "file": "blog/karpathy.github.io/_posts/2013-11-23-chrome-extension-programming.markdown",
+    "post_title": "Chrome Extension Programming: Illustrating a Basic Survival Skill with a Twitter Case Study",
+    "theme": "build-from-scratch",
+    "note": "Build the tool yourself instead of waiting for someone else.",
+    "line": 20,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Basically, ConvNets are a very powerful hammer, and Computer Vision problems are very nails.",
+    "file": "blog/karpathy.github.io/_posts/2015-10-25-selfie.markdown",
+    "post_title": "What a Deep Neural Network thinks about your #selfie",
+    "theme": "other",
+    "note": "Compressed statement of why convnets took over vision.",
+    "line": 22,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "An additional way to see that BIA is making stuff up is that it shows me losing lean body mass over time.",
+    "file": "blog/karpathy.github.io/_posts/2020-06-11-biohacking-lite.markdown",
+    "post_title": "Biohacking Lite",
+    "theme": "debugging",
+    "note": "Cross-checks an instrument against an independent observation and distrusts it.",
+    "line": 130,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "It's been super fun to self-study these topics (which I skipped in high school), and I hope this post was an interesting intro to some of it.",
+    "file": "blog/karpathy.github.io/_posts/2020-06-11-biohacking-lite.markdown",
+    "post_title": "Biohacking Lite",
+    "theme": "teaching",
+    "note": "Self-study of a new field, then writing the intro he wanted.",
+    "line": 137,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "It hence falls into a category of fun papers that take explicit algorithms, make them differentiable, embed them in a larger neural net, and train everything end-to-end.",
+    "file": "blog/paper-notes/vin.md",
+    "post_title": "Paper notes: Value Iteration Networks",
+    "theme": "software2.0",
+    "note": "Identifies a research pattern: make an algorithm differentiable and train it.",
+    "line": 7,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Unfortunately, I'm not sure why the authors preferred breadth of experiments and sacrificed depth of experiments.",
+    "file": "blog/paper-notes/vin.md",
+    "post_title": "Paper notes: Value Iteration Networks",
+    "theme": "debugging",
+    "note": "Prefers deep ablations over broad but shallow results.",
+    "line": 73,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "The original image is claimed to be so resized from original 28x28 to 1x1x64, which doesn't make sense because factor of 2 downsampling 4 times is reduction of 16, and 28/16 is a non-integer >1.",
+    "file": "blog/paper-notes/matching_networks.md",
+    "post_title": "Paper notes: Matching Networks for One Shot Learning",
+    "theme": "debugging",
+    "note": "Checks the arithmetic of a paper's stated architecture.",
+    "line": 70,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "I can't find the MANN numbers of 82.8% and 94.9% in their paper [21]; not clear where they come from.",
+    "file": "blog/paper-notes/matching_networks.md",
+    "post_title": "Paper notes: Matching Networks for One Shot Learning",
+    "theme": "debugging",
+    "note": "Traces reported baseline numbers back to their source.",
+    "line": 78,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Lets push fully end-to-end character rnn models further.",
+    "file": "blog/paper-notes/wikireading.md",
+    "post_title": "Paper notes: WikiReading",
+    "theme": "software2.0",
+    "note": "Takeaway: push end-to-end learned systems further.",
+    "line": 111,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Quite surprised to see char seq2seq do 0.699 vs. placeholder seq2seq at 0.718",
+    "file": "blog/paper-notes/wikireading.md",
+    "post_title": "Paper notes: WikiReading",
+    "theme": "empiricism",
+    "note": "Notes a result that updates his expectations.",
+    "line": 105,
+    "inventory": "quotes_blog.json"
+  },
+  {
+    "quote": "Both are tiny, with about 100 and 50 lines of code respectively.",
+    "file": "github/micrograd/README.md",
+    "repo": "micrograd",
+    "theme": "build-from-scratch",
+    "note": "Explicit line counts as a design goal.",
+    "line": 6,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "which trains and samples from a full GPT-2-like transformer in pure, dependency-free Python.",
+    "file": "github/micrograd/README.md",
+    "repo": "micrograd",
+    "theme": "build-from-scratch",
+    "note": "Dependency-free, from-scratch implementation.",
+    "line": 47,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "and is the complete algorithm in a single file — everything else is just efficiency.",
+    "file": "github/micrograd/README.md",
+    "repo": "micrograd",
+    "theme": "simplicity",
+    "note": "The algorithm is small; the rest is optimization.",
+    "line": 47,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "To run the unit tests you will have to install [PyTorch](https://pytorch.org/), which the tests use as a reference for verifying the correctness of the calculated gradients.",
+    "file": "github/micrograd/README.md",
+    "repo": "micrograd",
+    "theme": "debugging",
+    "note": "Verifying against a reference implementation.",
+    "line": 65,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "minGPT tries to be small, clean, interpretable and educational, as most of the currently available GPT model implementations can a bit sprawling.",
+    "file": "github/minGPT/README.md",
+    "repo": "minGPT",
+    "theme": "simplicity",
+    "note": "Small/clean/interpretable as explicit goals.",
+    "line": 6,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "GPT is not a complicated model and this implementation is appropriately about 300 lines of code",
+    "file": "github/minGPT/README.md",
+    "repo": "minGPT",
+    "theme": "build-from-scratch",
+    "note": "Line-count discipline matched to conceptual size.",
+    "line": 6,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "I also wanted to change the direction a bit, from a sole focus on education to something that is still simple and hackable but has teeth",
+    "file": "github/minGPT/README.md",
+    "repo": "minGPT",
+    "theme": "research-taste",
+    "note": "Simple and hackable, but reproduces real benchmarks.",
+    "line": 8,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "E.g. some large functions have as much as 90% unused code behind various branching statements that is unused in the default setting of simple language modeling",
+    "file": "github/minGPT/README.md",
+    "repo": "minGPT",
+    "theme": "abstraction",
+    "note": "Critique of full-featured frameworks being hard to trace.",
+    "line": 84,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "The code itself is plain and readable: `train.py` is a ~300-line boilerplate training loop and `model.py` a ~300-line GPT model definition",
+    "file": "github/nanoGPT/README.md",
+    "repo": "nanoGPT",
+    "theme": "simplicity",
+    "note": "Plain readable code with explicit line counts.",
+    "line": 13,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Because the code is so simple, it is very easy to hack to your needs, train new models from scratch, or finetune pretrained checkpoints",
+    "file": "github/nanoGPT/README.md",
+    "repo": "nanoGPT",
+    "theme": "simplicity",
+    "note": "Simplicity is what makes code hackable.",
+    "line": 17,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Have a look at all of its args, the script tries to be very readable, hackable and transparent.",
+    "file": "github/nanoGPT/README.md",
+    "repo": "nanoGPT",
+    "theme": "simplicity",
+    "note": "Readable, hackable, transparent as stated goals.",
+    "line": 134,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "If you are not a deep learning professional and you just want to feel the magic and get your feet wet, the fastest way to get started is to train a character-level GPT on the works of Shakespeare.",
+    "file": "github/nanoGPT/README.md",
+    "repo": "nanoGPT",
+    "theme": "teaching",
+    "note": "On-ramp designed for beginners.",
+    "line": 37,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Minimal, clean code for the (byte-level) Byte Pair Encoding (BPE) algorithm commonly used in LLM tokenization.",
+    "file": "github/minbpe/README.md",
+    "repo": "minbpe",
+    "theme": "simplicity",
+    "note": "Minimal and clean as the headline description.",
+    "line": 3,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "All of the files above are very short and thoroughly commented, and also contain a usage example on the bottom of the file.",
+    "file": "github/minbpe/README.md",
+    "repo": "minbpe",
+    "theme": "teaching",
+    "note": "Short, commented files with inline examples.",
+    "line": 16,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Finally, I'd like to stress that I tried hard to keep the code itself clean, readable and hackable. You should not have feel scared to read the code and understand how it works.",
+    "file": "github/minbpe/README.md",
+    "repo": "minbpe",
+    "theme": "understanding",
+    "note": "Code should invite reading, not intimidate.",
+    "line": 117,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Build your own GPT-4 Tokenizer!",
+    "file": "github/minbpe/exercise.md",
+    "repo": "minbpe",
+    "theme": "teaching",
+    "note": "Learning by rebuilding the real thing yourself.",
+    "line": 3,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "a lot of the shortcomings of LLMs that may be attributed to the neural network or otherwise appear mysterious actually trace back to tokenization.",
+    "file": "github/minbpe/lecture.md",
+    "repo": "minbpe",
+    "theme": "understanding",
+    "note": "Demystifying apparent magic by tracing it to a concrete stage.",
+    "line": 3,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Compared to llama.cpp, I wanted something super simple, minimal, and educational so I chose to hard-code the Llama 2 architecture and just roll one inference file of pure C with no dependencies.",
+    "file": "github/llama2.c/README.md",
+    "repo": "llama2.c",
+    "theme": "build-from-scratch",
+    "note": "Hard-code and roll your own rather than generalize.",
+    "line": 13,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "In particular, this repo is not a complex framework with a 1000 knobs controlling inscrutible code across a nested directory structure of hundreds of files.",
+    "file": "github/llama2.c/README.md",
+    "repo": "llama2.c",
+    "theme": "abstraction",
+    "note": "Explicit rejection of framework sprawl.",
+    "line": 319,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "This repo still cares about efficiency, but not at the cost of simplicity, readability or portability.",
+    "file": "github/llama2.c/README.md",
+    "repo": "llama2.c",
+    "theme": "simplicity",
+    "note": "Ranking simplicity above raw speed.",
+    "line": 321,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "It shouldn't be full-featured. It shouldn't take 100 different options or settings. It shouldn't be the most efficient.",
+    "file": "github/llama2.c/README.md",
+    "repo": "llama2.c",
+    "theme": "simplicity",
+    "note": "Deliberately refusing features.",
+    "line": 321,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "TLDR: I am eager to merge any mostly small, mostly localized, broadly applicable, clean changes that improve the efficiency and portability of the repo, while keep its hackability and readability.",
+    "file": "github/llama2.c/README.md",
+    "repo": "llama2.c",
+    "theme": "simplicity",
+    "note": "Contribution policy written around keeping code small.",
+    "line": 333,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "This is not meant to be too heavyweight library with a billion switches and knobs. It is one hackable file, and is mostly intended for educational purposes.",
+    "file": "github/makemore/README.md",
+    "repo": "makemore",
+    "theme": "simplicity",
+    "note": "One hackable file, no knobs.",
+    "line": 6,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "[PyTorch](https://pytorch.org) is the only requirement.",
+    "file": "github/makemore/README.md",
+    "repo": "makemore",
+    "theme": "build-from-scratch",
+    "note": "Minimal dependencies.",
+    "line": 6,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "A course on neural networks that starts all the way at the basics. The course is a series of YouTube videos where we code and train neural networks together.",
+    "file": "github/nn-zero-to-hero/README.md",
+    "repo": "nn-zero-to-hero",
+    "theme": "teaching",
+    "note": "Teaching from the basics, by coding together.",
+    "line": 4,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "I recommend you work through the exercise yourself but work with it in tandem and whenever you are stuck unpause the video and see me give away the answer.",
+    "file": "github/nn-zero-to-hero/README.md",
+    "repo": "nn-zero-to-hero",
+    "theme": "teaching",
+    "note": "Active practice over passive watching.",
+    "line": 52,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "This helps build competence and intuition around how neural nets are optimized and sets you up to more confidently innovate on and debug modern neural networks.",
+    "file": "github/nn-zero-to-hero/README.md",
+    "repo": "nn-zero-to-hero",
+    "theme": "understanding",
+    "note": "Manual backprop builds debugging intuition.",
+    "line": 50,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "We'll go through a number of these issues, discuss why tokenization is at fault, and why someone out there ideally finds a way to delete this stage entirely.",
+    "file": "github/nn-zero-to-hero/README.md",
+    "repo": "nn-zero-to-hero",
+    "theme": "research-taste",
+    "note": "Opinionated judgment about what should not exist.",
+    "line": 80,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "We are going to build everything end-to-end from basics to a functioning web app similar to ChatGPT, from scratch in Python, C and CUDA, and with minimal computer science prerequisites.",
+    "file": "github/llm101n/README.md",
+    "repo": "llm101n",
+    "theme": "build-from-scratch",
+    "note": "End-to-end from scratch, minimal prerequisites.",
+    "line": 13,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "By the end you should have a relatively deep understanding of AI, LLMs, and deep learning more generally.",
+    "file": "github/llm101n/README.md",
+    "repo": "llm101n",
+    "theme": "understanding",
+    "note": "Depth of understanding as the outcome.",
+    "line": 13,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "The git commits were specifically kept step by step and clean so that one can easily walk through the git commit history to see it built slowly.",
+    "file": "github/build-nanogpt/README.md",
+    "repo": "build-nanogpt",
+    "theme": "teaching",
+    "note": "Incremental steps made legible as commit history.",
+    "line": 3,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Minor cleanup, we forgot to delete `register_buffer` of the bias once we switched to flash attention, fixed with a recent PR.",
+    "file": "github/build-nanogpt/README.md",
+    "repo": "build-nanogpt",
+    "theme": "debugging",
+    "note": "Public errata; owning mistakes in the open.",
+    "line": 37,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Publishing here as a Github repo so people can easily hack it, walk through the `git log` history of it, etc.",
+    "file": "github/ng-video-lecture/README.md",
+    "repo": "ng-video-lecture",
+    "theme": "teaching",
+    "note": "Published so others can hack and walk the history.",
+    "line": 4,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "NOTE: sadly I did not go too much into model initialization in the video lecture, but it is quite important for good performance.",
+    "file": "github/ng-video-lecture/README.md",
+    "repo": "ng-video-lecture",
+    "theme": "teaching",
+    "note": "Flagging a gap in his own teaching.",
+    "line": 6,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages",
+    "file": "github/nanochat/README.md",
+    "repo": "nanochat",
+    "theme": "simplicity",
+    "note": "Minimal/hackable harness covering the whole pipeline.",
+    "line": 6,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Accessibility is about overall cost but also about cognitive complexity - nanochat is not an exhaustively configurable LLM \"framework\"; there are no giant configuration objects, model factories, or if-then-else monsters in the code base.",
+    "file": "github/nanochat/README.md",
+    "repo": "nanochat",
+    "theme": "abstraction",
+    "note": "Cognitive complexity is a first-class cost.",
+    "line": 201,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "It is a single, cohesive, minimal, readable, hackable, maximally-forkable \"strong baseline\" codebase designed to run start to end and produce a ChatGPT model you can talk to.",
+    "file": "github/nanochat/README.md",
+    "repo": "nanochat",
+    "theme": "simplicity",
+    "note": "The full list of adjectives he optimizes code for.",
+    "line": 201,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "I like to change something in the code, re-run a d12 (or a d16 etc) and see if it helped, in an iteration loop.",
+    "file": "github/nanochat/README.md",
+    "repo": "nanochat",
+    "theme": "empiricism",
+    "note": "Fast change-measure-repeat loop at small scale.",
+    "line": 100,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "But any candidate changes to the repo have to be principled enough that they work for all settings of depth.",
+    "file": "github/nanochat/README.md",
+    "repo": "nanochat",
+    "theme": "research-taste",
+    "note": "Changes must generalize, not just win one benchmark.",
+    "line": 108,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "autocast is \"magic we don't control\" — it silently decides which ops run in which precision via internal allowlists.",
+    "file": "github/nanochat/dev/LOG.md",
+    "repo": "nanochat",
+    "theme": "abstraction",
+    "note": "Rejecting implicit framework magic.",
+    "line": 78,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "By making precision explicit, we gain fine-grained control (e.g. can experiment with fp32 norms) and eliminate an unnecessary layer of abstraction.",
+    "file": "github/nanochat/dev/LOG.md",
+    "repo": "nanochat",
+    "theme": "abstraction",
+    "note": "Explicit control over hidden abstraction layers.",
+    "line": 78,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "This pass did not find any cheap parameter-golf transfer that clearly improves nanochat on the metric that matters: wall clock time to capability.",
+    "file": "github/nanochat/dev/LOG.md",
+    "repo": "nanochat",
+    "theme": "empiricism",
+    "note": "Negative results recorded against one clear metric.",
+    "line": 68,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Helped a tiny bit (~1e-4 of loss), abandoned to control complexity.",
+    "file": "github/nanochat/dev/LOG.md",
+    "repo": "nanochat",
+    "theme": "simplicity",
+    "note": "Rejecting a real but tiny win to keep code small.",
+    "line": 608,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Classifying as negative result and reverting back to FineWeb-edu for now.",
+    "file": "github/nanochat/dev/LOG.md",
+    "repo": "nanochat",
+    "theme": "empiricism",
+    "note": "Reverting when the experiment fails.",
+    "line": 711,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "For example, if it is gnarly or it significantly bloats the code, or it seems too esoteric, then we will weigh those things against the improvement demonstrated.",
+    "file": "github/nanochat/dev/LEADERBOARD.md",
+    "repo": "nanochat",
+    "theme": "simplicity",
+    "note": "Aesthetic cost counted against measured gains.",
+    "line": 51,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "So your change must be principled enough that it can easily generalize to other model depths, so that we can sweep out a miniseries.",
+    "file": "github/nanochat/dev/LEADERBOARD.md",
+    "repo": "nanochat",
+    "theme": "research-taste",
+    "note": "Principled generality over one-off tuning.",
+    "line": 51,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython.",
+    "file": "github/llm.c/README.md",
+    "repo": "llm.c",
+    "theme": "build-from-scratch",
+    "note": "Zero-dependency reimplementation.",
+    "line": 3,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "First, I want `llm.c` to be a place for education.",
+    "file": "github/llm.c/README.md",
+    "repo": "llm.c",
+    "theme": "teaching",
+    "note": "Education stated as the first goal of the repo.",
+    "line": 195,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "However, as a constraint, I want to keep the mainline `llm.c` in the root folder simple and readable.",
+    "file": "github/llm.c/README.md",
+    "repo": "llm.c",
+    "theme": "simplicity",
+    "note": "Simplicity enforced as a hard constraint.",
+    "line": 199,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "If there is a PR that e.g. improves performance by 2% but it \"costs\" 500 lines of complex C code, and maybe an exotic 3rd party dependency, I may reject the PR because the complexity is not worth it.",
+    "file": "github/llm.c/README.md",
+    "repo": "llm.c",
+    "theme": "simplicity",
+    "note": "An explicit exchange rate between speed and complexity.",
+    "line": 199,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "debugging tip: when you run the `make` command to build the binary, modify it by replacing `-O3` with `-g` so you can step through the code in your favorite IDE (e.g. vscode).",
+    "file": "github/llm.c/README.md",
+    "repo": "llm.c",
+    "theme": "debugging",
+    "note": "Concrete practical debugging advice.",
+    "line": 9,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "You'll see that this first forwards the reference code on the CPU, then it runs kernel 1 on the GPU, compares the results to check for correctness, and then runs a number of configurations of this kernel",
+    "file": "github/llm.c/dev/cuda/README.md",
+    "repo": "llm.c",
+    "theme": "debugging",
+    "note": "CPU reference as correctness oracle for GPU kernels.",
+    "line": 25,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "That's because it is buried 30 layers deep in the code, behind an inscrutable dynamical dispatcher, in some possibly auto-generated CUDA code",
+    "file": "github/llm.c/doc/layernorm/layernorm.md",
+    "repo": "llm.c",
+    "theme": "abstraction",
+    "note": "Framework internals are a black box you can't read.",
+    "line": 6,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "This will be a lot less efficient than just forwarding a `LayerNorm` module, but it is algorithmically instructive.",
+    "file": "github/llm.c/doc/layernorm/layernorm.md",
+    "repo": "llm.c",
+    "theme": "understanding",
+    "note": "Trading efficiency for instructional clarity.",
+    "line": 6,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "But we don't want to use PyTorch Autograd. We want to do the backward pass manually. So we take out pen and paper and write out the expression for LayerNorm.",
+    "file": "github/llm.c/doc/layernorm/layernorm.md",
+    "repo": "llm.c",
+    "theme": "understanding",
+    "note": "Derive it by hand rather than trust autograd.",
+    "line": 63,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "This is close but not quite the same as what the paper reports.",
+    "file": "github/lecun1989-repro/README.md",
+    "repo": "lecun1989-repro",
+    "theme": "empiricism",
+    "note": "Honest reporting of a partial reproduction.",
+    "line": 29,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "I expect that the majority of this discrepancy comes from the training dataset itself.",
+    "file": "github/lecun1989-repro/README.md",
+    "repo": "lecun1989-repro",
+    "theme": "empiricism",
+    "note": "Reasoning about the source of discrepancy.",
+    "line": 36,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Just me developing a pure Python from-scratch zero-dependency implementation of Bitcoin for educational purposes, including all of the under the hood crypto primitives such as SHA-256 and elliptic curves over finite fields math.",
+    "file": "github/cryptos/README.md",
+    "repo": "cryptos",
+    "theme": "build-from-scratch",
+    "note": "From-scratch, zero-dependency, down to the primitives.",
+    "line": 4,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "what better way to do this than implement it from scratch?",
+    "file": "github/cryptos/blog.ipynb",
+    "repo": "cryptos",
+    "theme": "understanding",
+    "note": "Implementing from scratch as the route to understanding.",
+    "line": 1,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "but this is supposed to be a zero-dependency implementation, so `import hashlib` is cheating.",
+    "file": "github/cryptos/blog.ipynb",
+    "repo": "cryptos",
+    "theme": "build-from-scratch",
+    "note": "Taking the no-dependency constraint literally.",
+    "line": 156,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "I admit that it may look a bit scary and understanding and re-deriving the above took me a good half of a day.",
+    "file": "github/cryptos/blog.ipynb",
+    "repo": "cryptos",
+    "theme": "understanding",
+    "note": "Honest about the effort understanding takes.",
+    "line": 117,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "A much simpler Transformer with a single type of block wired up to a residual pathway in both parallel and in series is possible but to my knowledge has not yet been convincingly achieved.",
+    "file": "github/randomfun/transformer_unify.ipynb",
+    "repo": "randomfun",
+    "theme": "research-taste",
+    "note": "Seeking a simpler unified architecture.",
+    "line": 12,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "TLDR in my experience it ~always works better to use an SVM instead of kNN, if you can afford the slight computational hit.",
+    "file": "github/randomfun/knn_vs_svm.ipynb",
+    "repo": "randomfun",
+    "theme": "empiricism",
+    "note": "Advice grounded in his own repeated experience.",
+    "line": 5,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "but it's a bit wordy, sprawling and in Theano. Hence my own shot at it with only ~150 lines of code and PyTorch <3.",
+    "file": "github/pytorch-made/README.md",
+    "repo": "pytorch-made",
+    "theme": "build-from-scratch",
+    "note": "Rewriting sprawling reference code compactly.",
+    "line": 8,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "I was not able to reproduce single-forward-pass gains that the paper alludes to when training with multiple masks, might be doing something wrong.",
+    "file": "github/pytorch-made/README.md",
+    "repo": "pytorch-made",
+    "theme": "empiricism",
+    "note": "Reporting a failed reproduction honestly.",
+    "line": 24,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "When I do not use data-driven init the training exhibits catastrophic index collapse.",
+    "file": "github/deep-vector-quantization/README.md",
+    "repo": "deep-vector-quantization",
+    "theme": "debugging",
+    "note": "Concrete empirical failure mode documented.",
+    "line": 14,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Remember that it has to learn everything completely from scratch.",
+    "file": "github/char-rnn/Readme.md",
+    "repo": "char-rnn",
+    "theme": "build-from-scratch",
+    "note": "Framing learning from scratch for the reader.",
+    "line": 54,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "**Note**: I am not actively maintaining ConvNetJS anymore because I simply don't have time.",
+    "file": "github/convnetjs/Readme.md",
+    "repo": "convnetjs",
+    "theme": "other",
+    "note": "Plain honesty about abandoned maintenance.",
+    "line": 13,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "The core of the library is a **Graph** structure which maintains the links between matrices and how they are related through transformations.",
+    "file": "github/recurrentjs/Readme.md",
+    "repo": "recurrentjs",
+    "theme": "build-from-scratch",
+    "note": "Autodiff built from a graph of matrices, by hand.",
+    "line": 18,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Rules of thumb: You almost always want to try the linear SVM first and see how that works.",
+    "file": "github/svmjs/README.md",
+    "repo": "svmjs",
+    "theme": "empiricism",
+    "note": "Start with the simplest baseline and measure.",
+    "line": 58,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "The library supports arbitrary weak learners.",
+    "file": "github/forestjs/README.md",
+    "repo": "forestjs",
+    "theme": "simplicity",
+    "note": "Small extensible core rather than many options.",
+    "line": 29,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "A much lighter-weight arxiv-sanity from-scratch re-write.",
+    "file": "github/arxiv-sanity-lite/README.md",
+    "repo": "arxiv-sanity-lite",
+    "theme": "build-from-scratch",
+    "note": "Rewriting his own project smaller, from scratch.",
+    "line": 4,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "It is a smaller version of arxiv-sanity that focuses on the core value proposition, is significantly less likely to ever go down, scales better",
+    "file": "github/arxiv-sanity-preserver/README.md",
+    "repo": "arxiv-sanity-preserver",
+    "theme": "simplicity",
+    "note": "Smaller surface area is more robust.",
+    "line": 4,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Bleh, that's a lot of dependencies isn't it.",
+    "file": "github/arxiv-sanity-preserver/README.md",
+    "repo": "arxiv-sanity-preserver",
+    "theme": "build-from-scratch",
+    "note": "Visible discomfort with dependency count.",
+    "line": 28,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "This is an early code release that works great but is slightly hastily released and probably requires some code reading of inline comments (which I tried to be quite good with in general).",
+    "file": "github/neuraltalk2/README.md",
+    "repo": "neuraltalk2",
+    "theme": "teaching",
+    "note": "Inline comments as the primary documentation.",
+    "line": 8,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Since I can't assess the quality of the similarity search I welcome any opinions on some of the hyperparameters.",
+    "file": "github/covid-sanity/README.md",
+    "repo": "covid-sanity",
+    "theme": "empiricism",
+    "note": "Admitting he lacks a metric to evaluate with.",
+    "line": 8,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "These two scripts have some more bells and whistles - don't be afraid to read & modify the code, it's relatively short.",
+    "file": "github/find-birds/README.md",
+    "repo": "find-birds",
+    "theme": "simplicity",
+    "note": "Short code invites modification.",
+    "line": 25,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "This paper falls into a category of *\"duh of course\"* kind of paper, something very interesting, powerful, but somehow obvious only in retrospect. I like it.",
+    "file": "github/paper-notes/matching_networks.md",
+    "repo": "paper-notes",
+    "theme": "research-taste",
+    "note": "His taste in what makes an idea good.",
+    "line": 7,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Code is ephemeral now and libraries are over, ask your LLM to change it in whatever way you like.",
+    "file": "github/llm-council/README.md",
+    "repo": "llm-council",
+    "theme": "software2.0",
+    "note": "His view that LLMs change how code is written and maintained.",
+    "line": 15,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "I'm not going to support it in any way, it's provided here as is for other people's inspiration and I don't intend to improve it.",
+    "file": "github/llm-council/README.md",
+    "repo": "llm-council",
+    "theme": "other",
+    "note": "Publishing a hack without taking on maintenance.",
+    "line": 15,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "I like deep neural nets.",
+    "file": "github/karpathy/README.md",
+    "repo": "karpathy",
+    "theme": "other",
+    "note": "His entire profile README.",
+    "line": 1,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "enter name of the json file in the box and click load. Ok this is a bit janky LOL. Ah well.",
+    "file": "github/gitstats/README.md",
+    "repo": "gitstats",
+    "theme": "other",
+    "note": "Shipping janky-but-working tools without apology.",
+    "line": 13,
+    "inventory": "quotes_github.json"
+  },
+  {
+    "quote": "Everything runs **completely locally**: none of your data is uploaded anywhere",
+    "file": "github/ulogme/README.md",
+    "repo": "ulogme",
+    "theme": "other",
+    "note": "Local-first by design.",
+    "line": 12,
+    "inventory": "quotes_github.json"
+  }
+]
