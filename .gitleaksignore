@@ -1,0 +1,40 @@
+# gitleaks allowlist — audited exceptions only.
+#
+# Every fingerprint below was inspected during an account-wide security audit
+# and confirmed to be a deliberate test fixture, an example in documentation,
+# a redaction/secret-scanning test's own input, or vendored upstream code.
+# None is a live credential.
+#
+# This file lists FINGERPRINTS, not paths or rules, on purpose: a fingerprint
+# pins one specific finding at one location. A NEW secret added to any of the
+# same files still fails the scan. Do not replace these with path globs.
+#
+# If a finding here ever turns out to be real, delete its line rather than
+# editing it, so the scanner reports it again.
+
+# karpathy-brain/raw/github/cryptos/README.md  [generic-api-key]
+387e28bc899151058d343344a66f509de51fd431:karpathy-brain/raw/github/cryptos/README.md:generic-api-key:24
+
+# karpathy-brain/raw/github/transformers/docs/source/en/model_doc/longt5.mdx  [generic-api-key]
+387e28bc899151058d343344a66f509de51fd431:karpathy-brain/raw/github/transformers/docs/source/en/model_doc/longt5.mdx:generic-api-key:59
+
+# karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx  [generic-api-key]
+387e28bc899151058d343344a66f509de51fd431:karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx:generic-api-key:96
+
+# karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx  [generic-api-key]
+387e28bc899151058d343344a66f509de51fd431:karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx:generic-api-key:121
+
+# karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx  [generic-api-key]
+387e28bc899151058d343344a66f509de51fd431:karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx:generic-api-key:157
+
+# karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx  [generic-api-key]
+387e28bc899151058d343344a66f509de51fd431:karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx:generic-api-key:232
+
+# karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx  [generic-api-key]
+387e28bc899151058d343344a66f509de51fd431:karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx:generic-api-key:249
+
+# karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx  [generic-api-key]
+387e28bc899151058d343344a66f509de51fd431:karpathy-brain/raw/github/transformers/docs/source/en/model_doc/t5.mdx:generic-api-key:275
+
+# karpathy-brain/raw/github/transformers/tests/models/mt5/test_modeling_flax_mt5.py  [generic-api-key]
+387e28bc899151058d343344a66f509de51fd431:karpathy-brain/raw/github/transformers/tests/models/mt5/test_modeling_flax_mt5.py:generic-api-key:24
