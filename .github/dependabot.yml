@@ -1,0 +1,41 @@
+version: 2
+
+# Security-first Dependabot configuration.
+#
+#   * `security` groups keep vulnerability fixes in ONE pull request per
+#     ecosystem instead of one per package, so a Next.js advisory that touches
+#     six transitive packages does not open six PRs.
+#   * open-pull-requests-limit is deliberately low: an unreviewable backlog of
+#     dependency PRs is the main reason these configs get switched off.
+#   * Version updates are weekly; security updates are not rate-limited by
+#     this file and arrive as soon as an advisory is published.
+
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    groups:
+      security:
+        applies-to: security-updates
+        patterns: ["*"]
+      minor-and-patch:
+        applies-to: version-updates
+        update-types: ["minor","patch"]
+        patterns: ["*"]
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 3
+    groups:
+      security:
+        applies-to: security-updates
+        patterns: ["*"]
+      minor-and-patch:
+        applies-to: version-updates
+        update-types: ["minor","patch"]
+        patterns: ["*"]
