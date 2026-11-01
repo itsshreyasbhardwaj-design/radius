@@ -5,10 +5,13 @@ version: 2
 #   * `security` groups keep vulnerability fixes in ONE pull request per
 #     ecosystem instead of one per package, so a Next.js advisory that touches
 #     six transitive packages does not open six PRs.
-#   * open-pull-requests-limit is deliberately low: an unreviewable backlog of
-#     dependency PRs is the main reason these configs get switched off.
-#   * Version updates are weekly; security updates are not rate-limited by
-#     this file and arrive as soon as an advisory is published.
+#   * open-pull-requests-limit is 0, which disables VERSION updates. That limit
+#     does not apply to security updates, so vulnerability fixes still arrive
+#     as soon as an advisory is published. This is deliberate: freshness PRs
+#     at account scale stop being read, and an unread dependency PR is worse
+#     than none. Raise the limit to turn version updates back on.
+#   * Version updates are off; security updates are not rate-limited by this
+#     file and arrive as soon as an advisory is published.
 
 updates:
   - package-ecosystem: "pip"
@@ -16,7 +19,7 @@ updates:
     schedule:
       interval: "weekly"
       day: "monday"
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 0
     groups:
       security:
         applies-to: security-updates
@@ -30,7 +33,7 @@ updates:
     schedule:
       interval: "weekly"
       day: "monday"
-    open-pull-requests-limit: 3
+    open-pull-requests-limit: 0
     groups:
       security:
         applies-to: security-updates
